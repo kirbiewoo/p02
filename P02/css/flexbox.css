@@ -1,0 +1,58 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+.images, .product-image{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.home-page{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.items-1, .items-2, .items-3, .items-1-info, .items-2-info, .items-3-info{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.reservation{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (min-width: 50em){
+	.reserve-text, .reserve-number, .reserve-detail{
+		flex:0 0 100%;
+	}
+	.reserve-check{
+		flex:0 0 18em;
+	}
+	
+}
+
+@media (max-width: 77em){
+	.items-listing{
+		flex: 1 1 20%;
+	}
+	.items-info{
+		flex: 1 1 20%;
+	}
+
+}
+
+@media (max-width: 45em){
+	.items-listing{
+		flex: 1 1 100%;
+	}
+	.items-info{
+		flex: 1 1 100%;
+	}
+
+}
