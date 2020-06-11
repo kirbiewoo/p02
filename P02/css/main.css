@@ -14,6 +14,11 @@
 	font-style: normal;
 }
 
+section:not([id]){
+	padding: 1em;
+	border-bottom: 1px solid #000066;
+}
+
 body {
   font-family: 'sf', sans-serif;
   padding: 2rem;
@@ -40,6 +45,76 @@ h4{
 p{
 	letter-spacing: 2px;
 }
+
+
+/*BRADING*/
+.colours{
+	height: 20%;
+	max-width: 100%;
+}
+.colour-box{
+	padding: 1em;
+	margin: 1em;
+}
+.colour1{
+	background-color: #E28E83;
+}
+.colour2{
+	background-color: #404C77;
+}
+.colour3{
+	background-color: #F9D999;
+}
+.colour4{
+	background-color: #D0DDE7;
+}
+
+.colour-text{
+	text-align: center;
+}
+/*INTERACTIVE ELEMENTS*/
+
+
+code{
+	background:#D0DDE7;
+	font-size: 1em; 
+	line-height: 1.25em;
+	padding: 1.25em;
+	display: inline-block;
+}
+
+/*Modular*/
+
+/*Product listing*/
+.item{
+	position: relative;
+}
+
+.listing-img {
+	height: auto;
+	width: 60%;
+	align-items: center;
+}
+
+.item-name{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.item-price{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.item-detail{
+	font-size:15px;
+	padding-bottom: 1em;
+
+}
+
+
+
+
 
 
 
