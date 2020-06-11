@@ -278,12 +278,12 @@
 			<section>
 				<h3>Product Listing</h3>
 				<h4>CSS selector</h4>
-				<p>.item .item-img .item-text .item-name .item-price .item-detail .itempdetail .item-button</p>
+				<p>.item .item-img .item-text .item-name .item-price .item-detail .item-button</p>
 				<h4>Example</h4>
 				
 				<div class="item">
 					<div class="item-img">
-						<img class="listing-img" src="img/nike-cdg.jpg" alt="CDG x NIKE shoes">
+						<img src="img/nike-cdg.jpg" alt="CDG x NIKE shoes" class="shoes-img">
 					</div>
 					<div class="item-text">
 						<h3 class="item-name"> CDG x NIKE </h3>
@@ -291,8 +291,9 @@
 						<p class="item-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
 						<div>
-							<a href="#" class="button-basic item-button">Add to Cart</a>
+							<a href="#" class="item-button">Add to Cart</a>
 						</div>
+
 					</div>
 				</div><!--END OF CLASS ITEM-->
 
@@ -322,10 +323,54 @@
 		<section id="grid-structure">
 			<h2>Grid Structure</h2>
 
+
+			<section>
+				<h3>About Page</h3>
+				<div class="grid-1">Header</div>
+				<div class="grid-2">
+					<div class="grid-2-img">About Image</div>
+					<div class="grid-2-text">About Text</div>
+				</div>
+				<div class="grid-3">Footer</div>
+			</section>
+
+			<section>
+				<h3>Product Page</h3>
+				<div class="grid-1">Header</div>
+				<div class="grid-4">
+					<div class="grid-4-bar">Menu Bar</div>
+				</div>
+				<div class="grid-5">
+					<div class="grid-5-item">Product 1</div>
+					<div class="grid-5-item">Product 2</div>
+					<div class="grid-5-item">Product 3</div>
+					<div class="grid-5-item">Product 4</div>
+					<div class="grid-5-item">Product 5</div>
+					<div class="grid-5-item">Product 6</div>
+					<div class="grid-5-item">Product 7</div>
+					<div class="grid-5-item">Product 8</div>	
+				</div>
+				<div class="grid-3">Footer</div>
+			</section>
+
+			<section>
+				<h3>Specific Product Page</h3>
+				<div class="grid-1">Header</div>
+				<div class="grid-6">
+					<div class="grid-6-img">Image</div>
+					<div class="grid-6-text">Text</div>
+				</div>
+				<div class="grid-7">
+					<div class="grid-7-rev">Reviews</div>
+				</div>
+				<div class="grid-3">Footer</div>
+			</section>
+
+
 			
 		</section><!--End of grid-->
 
-<script>document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')</script>
+
 
 	</body>
 
