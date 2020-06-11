@@ -127,6 +127,12 @@ p{
 	box-shadow: 0em 0.3em 0.6em rgb(25,35,71, .5);
 	transform: scale(.95);
 }
+<<<<<<< Updated upstream
+=======
+ .call-button:active {
+ 	transform: scale(0.95);
+ }
+>>>>>>> Stashed changes
 
  .submit{
 	color:#F9D999;
