@@ -1,0 +1,43 @@
+/*
+	Style Guide Styling
+	Default Styling
+*/
+
+*, *::after, *::before{
+	box-sizing: border-box;
+}
+
+
+@font-face{
+	font-family: sf;
+	src: url("fonts/SF-Pro-Display-Regular.otf");
+	font-style: normal;
+}
+
+body {
+  font-family: 'sf', sans-serif;
+  padding: 2rem;
+  color:#666666;
+} 
+
+h1{
+	font-size: 45px;
+}
+
+h2{
+	color:#ed5c4d;
+}
+
+h3{
+  font-family: 'sf';
+	color:#E2887C;
+}
+
+h4{
+	
+	color:#273253;
+}
+
+p{
+	letter-spacing: 2px;
+}
