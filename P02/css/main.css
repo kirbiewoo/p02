@@ -74,6 +74,27 @@ p{
 }
 /*INTERACTIVE ELEMENTS*/
 
+.call-button{
+	display:inline-block;
+	padding: 1em;
+	color:white;
+	background-color:#404C77;
+	text-align:center;
+	font-weight:bold;
+	text-decoration: none;
+}
+.call-button:hover, .call-button:active, .call-button:focus {
+	display:inline-block;
+	padding: 1em;
+	color:#404C77;
+	background-color:white;
+	text-align:center;
+	font-weight:bold;
+	text-decoration: none;
+	border: solid #404C77;
+	transition: color 0.3s ease-out;
+	-webkit-transition: color 0.3s ease-out;
+}
 
 code{
 	background:#D0DDE7;
@@ -85,12 +106,35 @@ code{
 
 /*Modular*/
 
+
+/*Main Nav*/
+img.logo {
+width:auto;
+height:2em;
+}
+
+img.search{
+width:auto;
+margin-top: 15px;
+margin-right: 6px;
+height:1em;
+}
+
+.shop-icon{
+  margin-right: 10px;
+  margin-bottom: 1px;
+}
+
+.search-field{
+  font-size: 20px;
+  margin-right: 5px;
+}
+
 /*Product listing*/
 .item{
 	position: relative;
 }
-
-.listing-img {
+img {
 	height: auto;
 	width: 60%;
 	align-items: center;
@@ -110,6 +154,30 @@ code{
 	font-size:15px;
 	padding-bottom: 1em;
 
+}
+
+.item-button{
+	position:absolute;
+	padding:1em;
+}
+
+.nav-button{
+	display: inline-block;
+	font-size: 0.9em;
+	color: #F1C162;
+	padding: 0.2em;
+	margin: 1.5em;
+	border: none;
+	font-weight: bold;
+	letter-spacing: 0.07em;
+	text-decoration: none;
+}
+
+.nav-button:hover, .nav-button:focus, .nav-button:active  {
+	color: #526D83;
+    border-bottom: 2px solid #FBBE4B;
+    -webkit-transition: color 0.3s ease-out;
+  	transition: color 0.3s ease-out;
 }
 
 

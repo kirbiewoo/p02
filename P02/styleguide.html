@@ -236,22 +236,42 @@
 			<section>
 				<h3>Main Navigation</h3>
 				<h4>CSS selector</h4>
-				<p>.main-nav</p>
+				<p>.main-nav .action-button .width-adjust .search-field .brand-logo .shop-icon .search-icon</p>
 				<h4>Example</h4>
-				<nav class="main-nav">
-					<a href="#">Home</a>
-					<a href="#">Shop</a>
-					<a href="#">About</a>
-					<a href="#">Contact</a>
-				</nav>
+				 <nav class="main-nav">
+			      	 <img src="image/logo.png" class="brand-logo" alt="logo for brand">	
+			         <div class="width-adjust"></div>
+			         <a class="nav-button" href="#">HOME</a>
+			         <a class="nav-button" href="#">SHOP</a>
+			         <a class="nav-button" href="#">ABOUT</a>
+			         <a class="nav-button" href="#">CONTACT</a>
+			         <div class="width-adjust"></div>
+			         <div class="shopping">
+			         	<img src="image/shopping.png" class="shopping" alt="shopping">
+			         </div>
+			         <div class="search-field">
+			         	<img src="image/search.png" class="search" alt="search"/>
+			        	 <form> <input type="text" name="Search Field" value="Search..."> </form>
+			        </div>
+		        </nav>
 				<h4>Sample Codes</h4>
 				<code>
 					&lt;nav class="main-nav"&gt;<br>
-						&lt;a href="#"&gt;Home&lt;/a&gt;<br>
-						&lt;a href="#"&gt;Shop&lt;/a&gt;<br>
-						&lt;a href="#"&gt;About&lt;/a&gt;<br>
-						&lt;a href="#"&gt;Contact&lt;/a&gt;<br>
-					&lt;/nav&gt;
+				      	 &lt;img src="image/logo.png" class="bLogo" alt="logo for brand"&gt;<br>	
+				         &lt;div class="width-adjust"&gt;&lt;/div&gt;<br>
+				         &lt;a class="nav-button" href="#"&gt;HOME&lt;/a&gt;<br>
+				         &lt;a class="nav-button" href="#"&gt;SHOP&lt;/a&gt;<br>
+				         &lt;a class="nav-button" href="#"&gt;ABOUT&lt;/a&gt;<br>
+				         &lt;a class="nav-button" href="#"&gt;CONTACT&lt;/a&gt;<br>
+				         &lt;div class="width-adjust"&gt;&lt;/div&gt;<br>
+				         &lt;div class="shopping"&gt;<br>
+				         	&lt;img src="image/shopping.png" class="shop-icon" alt="shopping"&gt;<br>
+				         &lt;/div&gt;<br>
+				         &lt;div class="search-field"&gt;<br>
+				         	&lt;img src="image/search.png" class="search-icon" alt="search"/&gt;<br>
+				        	&lt;form&gt; &lt;input type="text" name="Search Field" value="Search..."&gt; &lt;/form&gt;<br>
+				        &lt;/div&gt;<br>
+			        &lt;/nav&gt;
 				</code>
 			</section>
 
