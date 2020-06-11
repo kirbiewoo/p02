@@ -78,7 +78,7 @@
   flex-wrap: wrap;
 	flex: 1 1 70%;
 	line-height:2em;
-	paddig: 1em;
+	padding: 1em;
 	
 }
 
@@ -107,7 +107,7 @@
 .grid-6, .grid-7{
   display:flex;
   flex-wrap:wrap;
-  justify-content: cener;
+  justify-content: center;
 }
 
 .grid-6-text{
