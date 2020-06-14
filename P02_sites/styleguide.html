@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>P02 - Check-in one</title>
+
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/flexbox.css">
+		<link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Prata&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<h1>P02 - Style Guide</h1>
+		<nav>
+			<a href="styleguide.html">Styleguide</a>
+			<a href="sitemap.html">Sitemap</a>
+			<a href="wireframes.html">Wireframes</a>
+			<a href="citation.html">Citation</a>
+		</nav>
+
+		<nav>
+			<a href="#interactive-element">Interactive Element</a>
+			<a href="#text-styling">Text Styling</a>
+			<a href="#pattern-element">Modular Pattern Element</a>
+			<a href="#grid-structure">Grid Structure</a>
+		</nav>
+
+		<section id="branding">
+			<h2>Branding</h2>
+
+			<section>
+				<h3>Brand Definition</h3>
+				<p class="text"> Jay.Kay Customs is a brand that offers sneaker customization for sneakerheads since May 2018. We are an exclusive footwear customization brand creating unique designs and adding vibrant enahncements to classic sneakers that is one of a kind. It first started as a hobby between Jisoo and Kirby, it then turned from passion into business venture where they could create designs for others that no one else had.  </p>
+			</section>
+
+			<section>
+				<h3>Typeface</h3>
+				<div class="font">
+					<h4>Title</h4>
+					<h2 class="">SF Display Pro</h2>
+				</div>
+
+				<div class="font">
+					<h4>Heading</h4>
+					<h3 class="">SF Display Pro</h3>
+				</div>
+
+				<div class="font">
+					<h4>Body</h4>
+					<p class="">Mabry Pro</p>
+				</div>
+			</section>
+
+			<section>
+				<h3>Colour Palette</h3>
+				<div class="colours">
+					<div class="colour-box colour1">
+						<p class="colour-text">#E28E83</p>
+					</div>
+					<div class="colour-box colour2">
+						<p class="colour-text">#404C77</p>
+					</div>
+					<div class="colour-box colour3">
+						<p class="colour-text">#F9D999</p>
+					</div>
+					<div class="colour-box colour4">
+						<p class="colour-text">#D0DDE7</p>
+					</div>
+				</div> <!--Closing colours-->
+			</section>
+
+		</section> <!--End of branding-->
+
+		<section id="interactive-element">
+
+			<section>
+				<h3>In-Text Link</h3>
+				<h4>CSS selector</h4>
+				<p>.intext</p>
+				<h4>Example</h4>
+				<a class="intext" href="#">In-text Link</a> 
+				<h4>Sample Code</h4>
+				<code> 
+					&lt;a class="intext" href="#"&gt;In-text Link&lt;/a&gt;
+				</code>
+			</section>
+
+			<section>
+				<h3>Call to action button</h3>
+				<h4>CSS selector</h4>
+				<p>.call-button</p>
+				<h4>Example</h4>
+				<a class="call-button" href="#">Button</a>
+				<h4>Sample Code</h4>
+				<code> 
+					&lt;a class="call-button" href="#"&gt;BUTTON&lt;/a&gt;
+				</code>
+			</section>
+
+<!--TEXT INPUT PART STILL NEED SOME WORK-->
+			<section>
+				<h3>Text input field and a label</h3>
+				<h4>CSS selector</h4>
+				<p>input .input-text</p>
+				<h4>Example</h4>
+				<div class="input-form">
+					<!--from w3school-->
+					<form action="/action_page.php">
+						<div class="input-section">
+							<label>Name:</label>
+							<input class="input-text" type="text" placeholder="Type here"><br>
+						</div>
+						<div class="input-section">
+							<label>Phone:</label>
+							<input class="input-text" type="text" placeholder="Type here"><br>
+						</div>
+						<div class="input-section">
+							<label>Email:</label>
+							<input class="input-text" type="text" placeholder="Type here"><br>
+						</div>
+						<input type="submit" value="submit">
+					</form>
+				</div>
+				<h4>Sample Code</h4>
+				<code>
+					&lt;form action="/action_page.php"&gt;<br>
+						&lt;label for="name"&gt;Name:&lt;/label&gt;<br>
+						&lt;input class="input-text" type="text" placeholder="Type here"&gt;<br>
+						&lt;label for="phone"&gt;Phone:&lt;/label&gt;<br>
+						&lt;input class="input-text" type="text" placeholder="Type here"&gt;<br>
+						&lt;label for="mail"&gt;Email:&lt;/label&gt;<br>
+						&lt;input class="input-text" type="text" placeholder="Type here"&gt;<br>
+						&lt;input type="submit" value="submit"&gt;<br>
+					&lt;/form&gt;
+				</code>
+			</section>
+
+		</section><!--End of interavtive element-->
+
+		<section id="text-styling">
+
+			<section>
+				<h3>Buttons</h3>
+				<h4>CSS selector</h4>
+				<p>.button-basic .submit .reset</p>
+				<h4>Example</h4>
+				<a class="button-basic submit" href="#">Submit</a>
+				<a class="button-basic reset" href="#">Reset</a>
+				<h4>Sample Code</h4>
+				<code>
+					&lt;a class="button-basic submit"&gt;Submit&lt;/a&gt; <br>
+					&lt;a class="button-basic reset"&gt;Reset&lt;/a&gt;		
+				</code>
+			</section>
+
+			<section>
+				<h3>Levels of heading</h3>
+				<h4>CSS selector</h4>
+				<p>h1 h2 h3</p>
+				<h4>Examples</h4>
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Sample Code</h4>
+				<code>
+					&lt;h1&gt;Heading 1&lt;h1&gt;<br>
+					&lt;h2&gt;Heading 2&lt;h2&gt;<br>
+					&lt;h3&gt;Heading 3&lt;h3&gt;<br>
+				</code>
+			</section>
+
+			<section>
+				<h3>Paragraph</h3>
+				<h3>CSS selector</h3>
+				<p>.text</p>
+				<h4>Example</h4>
+				<p class="text">
+					This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				</p>
+				<h4>Sample Codes</h4>
+				<code>
+					&lt;p&gt; This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  &lt;/p&gt;
+				</code>
+			</section>
+
+			<section>
+				<h3>Bulletted Lists</h3>
+				<h4>CSS selector</h4>
+				<p>ul .listing</p>
+				<h4>Example</h4>
+				<ul>
+					<li class="listing">First</li>
+					<li class="listing">Second</li>
+					<li class="listing">Third</li>
+				</ul>
+				<h4>Sample Codes</h4>
+				<code>
+					&lt;ul&gt;<br>
+						&lt;li class="listing"&gt;First&lt;/li&gt; <br>
+						&lt;li class="listing"&gt;Second&lt;/li&gt; <br>
+						&lt;li class="listing"&gt;Third&lt;/li&gt; <br>
+					&lt;/ul&gt;
+				</code>
+			</section>
+
+			<section>
+				<h3>Numbered Lists</h3>
+				<h4>CSS selector</h4>
+				<p>ol .listing</p>
+				<h4>Example</h4>
+				<ol>
+					<li class="listing">First</li>
+					<li class="listing">Second</li>
+					<li class="listing">Third</li>
+				</ol>
+				<h4>Sample Codes</h4>
+				<code>
+					&lt;ol&gt;<br>
+						&lt;li class="listing"&gt;First&lt;/li&gt; <br>
+						&lt;li class="listing"&gt;Second&lt;/li&gt; <br>
+						&lt;li class="listing"&gt;Third&lt;/li&gt; <br>
+					&lt;/ol&gt;
+				</code>
+			</section>
+
+		</section><!--End of text styling-->
+
+		<section id="pattern-element">
+			<h2>Modular Pattern Element</h2>
+
+			<section>
+				<h3>Main Navigation</h3>
+				<h4>CSS selector</h4>
+				<p>.main-nav .action-button .width-adjust .search-field .brand-logo .shop-icon .search-icon</p>
+				<h4>Example</h4>
+				 <nav class="main-nav">
+			      	 <img src="img/logo.png" class="brand-logo" alt="logo for brand">	
+			         <div class="width-adjust"></div>
+			         <a class="nav-button" href="#">HOME</a>
+			         <a class="nav-button" href="#">SHOP</a>
+			         <a class="nav-button" href="#">ABOUT</a>
+			         <a class="nav-button" href="#">CONTACT</a>
+			         <div class="width-adjust"></div>
+			         <img src="img/shopping.png" class="shop-icon" alt="shopping">
+			         
+			         <div class="search-field">
+			         	<img src="img/search.png" class="search" alt="search"/>
+			        	 <form> <input type="text" name="Search Field" value="Search..."> </form>
+			        </div>
+
+		        </nav>
+				<h4>Sample Codes</h4>
+				<code>
+					&lt;nav class="main-nav"&gt;<br>
+				      	 &lt;img src="image/logo.png" class="bLogo" alt="logo for brand"&gt;<br>	
+				         &lt;div class="width-adjust"&gt;&lt;/div&gt;<br>
+				         &lt;a class="nav-button" href="#"&gt;HOME&lt;/a&gt;<br>
+				         &lt;a class="nav-button" href="#"&gt;SHOP&lt;/a&gt;<br>
+				         &lt;a class="nav-button" href="#"&gt;ABOUT&lt;/a&gt;<br>
+				         &lt;a class="nav-button" href="#"&gt;CONTACT&lt;/a&gt;<br>
+				         &lt;div class="width-adjust"&gt;&lt;/div&gt;<br>
+				         &lt;div class="shopping"&gt;<br>
+				         	&lt;img src="image/shopping.png" class="shop-icon" alt="shopping"&gt;<br>
+				         &lt;/div&gt;<br>
+				         &lt;div class="search-field"&gt;<br>
+				         	&lt;img src="image/search.png" class="search-icon" alt="search"/&gt;<br>
+				        	&lt;form&gt; &lt;input type="text" name="Search Field" value="Search..."&gt; &lt;/form&gt;<br>
+				        &lt;/div&gt;<br>
+			        &lt;/nav&gt;
+				</code>
+			</section>
+
+			<section>
+				<h3>Product Listing</h3>
+				<h4>CSS selector</h4>
+				<p>.item .item-img .item-text .item-name .item-price .item-detail .item-button</p>
+				<h4>Example</h4>
+				
+				<div class="item">
+					<div class="item-img">
+						<img src="img/nike-cdg.jpg" alt="CDG x NIKE shoes" class="shoes-img">
+					</div>
+					<div class="item-text">
+						<h3 class="item-name"> CDG x NIKE </h3>
+						<p class="item-price"> $225 </p>
+						<p class="item-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+						<div>
+							<a href="#" class="item-button">Add to Cart</a>
+						</div>
+
+					</div>
+				</div><!--END OF CLASS ITEM-->
+
+				<h4>Sample Codes</h4>
+				<code>
+					&lt;div class="item"&gt;<br>
+					&lt;div class="item-img"&gt;<br>
+						&lt;img class="listing-img" src="img/nike-cdg.jpg" alt="CDG x NIKE shoes"&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;div class="item-text"&gt;<br>
+						&lt;h3 class="item-name"&gt; CDG x NIKE &lt;/h3&gt;<br>
+						&lt;p class="item-price"&gt; $225 &lt;/p&gt;<br>
+						&lt;p class="item-detail"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;<br>
+
+						&lt;div class="item-button"&gt;<br>
+							&lt;a href="#"&gt;Add to Cart&lt;/a&gt;<br>
+						&lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+				&lt;/div&gt;
+				</code>
+
+				
+			</section>
+			
+		</section><!--End of Pattern Element-->
+
+		<section id="grid-structure">
+			<h2>Grid Structure</h2>
+
+
+			<section>
+				<h3>About Page</h3>
+				<div class="grid-1">Header</div>
+				<div class="grid-2">
+					<div class="grid-2-img">About Image</div>
+					<div class="grid-2-text">About Text</div>
+				</div>
+				<div class="grid-3">Footer</div>
+			</section>
+
+			<section>
+				<h3>Product Page</h3>
+				<div class="grid-1">Header</div>
+				<div class="grid-4">
+					<div class="grid-4-bar">Menu Bar</div>
+				</div>
+				<div class="grid-5">
+					<div class="grid-5-item">Product 1</div>
+					<div class="grid-5-item">Product 2</div>
+					<div class="grid-5-item">Product 3</div>
+					<div class="grid-5-item">Product 4</div>
+					<div class="grid-5-item">Product 5</div>
+					<div class="grid-5-item">Product 6</div>
+					<div class="grid-5-item">Product 7</div>
+					<div class="grid-5-item">Product 8</div>	
+				</div>
+				<div class="grid-3">Footer</div>
+			</section>
+
+			<section>
+				<h3>Specific Product Page</h3>
+				<div class="grid-1">Header</div>
+				<div class="grid-6">
+					<div class="grid-6-img">Image</div>
+					<div class="grid-6-text">Text</div>
+				</div>
+				<div class="grid-7">
+					<div class="grid-7-rev">Reviews</div>
+				</div>
+				<div class="grid-3">Footer</div>
+			</section>
+
+
+			
+		</section><!--End of grid-->
+
+		<section>
+			<h3>Link to Github</h3>
+
+			<p>Please <a href="https://github.com/kirbiewoo/p02">press here </a> for github</p>
+
+		</section>
+
+
+	</body>
+
+</html>

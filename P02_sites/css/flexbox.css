@@ -1,0 +1,148 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+
+/*Main navigation*/
+.main-nav{
+	display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  align-items: -webkit-flex-end;
+  align-items: -ms-flex-end;
+  align-items: flex-end;
+}
+
+.brand-logo{
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  width: auto;
+ 
+}
+
+.width-adjust{
+
+  -webkit-flex-grow:50;
+  -ms-flex-grow:50;
+  flex-grow: 50;
+
+}
+
+.shop-icon{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  -webkit-flex-wrap:wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-flex-grow:0.6;
+  -ms-flex-grow:0.6;
+  flex-grow: 0.6;
+
+}
+
+.search-field{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  -webkit-flex-wrap:wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-flex-grow:2;
+  -ms-flex-grow:2;
+  flex-grow: 2;
+
+}
+
+/*Product listing*/
+.item{
+	display: flex;
+
+}
+
+.item-img{
+	flex-wrap: wrap;
+}
+
+.item-text{
+  flex-wrap: wrap;
+	flex: 1 1 70%;
+	line-height:2em;
+	padding: 1em;
+	
+}
+
+
+/*Grid*/
+
+.grid-1, .grid-3{
+  display: flex;
+  flex:1 1 100%;
+  height:100px;
+}
+
+.grid-2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+}
+
+/*From https://learncssgrid.com*/
+.grid-5{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+.grid-6, .grid-7{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.grid-6-text{
+  flex:auto;
+}
+
+@media(max-width:1000px){
+  .grid-5{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media(max-width:860px){
+
+  .grid-5{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width:800px){
+
+  .grid-6-img, .grid-6-text,.item-text{
+    flex: 0 0 100%;
+  }
+
+}
+
+@media(max-width:600px){
+  .grid-5{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
+
+
