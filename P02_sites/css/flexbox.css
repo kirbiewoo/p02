@@ -2,6 +2,18 @@
 	box-sizing: border-box;
 }
 
+.container{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  flex-wrap: -webkit-flex;
+  flex-wrap: -ms-flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+}
+
 
 /*Main navigation*/
 .main-nav{
