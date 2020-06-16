@@ -70,6 +70,10 @@ p.company-info{
 
 /********************** CONTACT ************************/
 
+div.contact-form{
+	margin:0 3rem 5rem 3rem;
+}
+
 form.contact-type input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -93,11 +97,7 @@ input[type=submit]:hover {
 
 }
 
-.contact-title{
-	font-size: 40px;
-	text-align: center;
-	margin-bottom: 0.5em;
-}
+
 .contact-detail{
 	text-align: center;
 	margin-bottom: 2em;
@@ -140,7 +140,7 @@ input[type=submit]:hover {
 }
 
 
-/********************** CONTACT ************************/
+/********************** CONFIRMATION ************************/
 div.confirmation{
 	padding:12em;
 	text-align: center;
@@ -149,18 +149,39 @@ div.confirmation{
 
 /****************  Product listing   ***************/
 
-img.shoes-img{
-	width: 65%;
+.product-detail{
+	margin:3em;
 }
+
+.details{
+	padding-top:2em; 
+}
+.detail-img{
+	width: 100%;
+	display: inline-block;
+}
+
+img.shoes-img{
+	width:75%;
+}
+
+
+.detail-text {
+  width: 75%;
+  position: relative;
+  margin-top:17rem;
+  padding: 0 2rem;
+  line-height: 1.3em;
+
+}
+
 
 .item-name{
 	font-size: 30px;
-	font-weight: bold;
 }
 
 .item-price{
 	font-size: 18px;
-	font-weight: bold;
 }
 
 .item-detail{
@@ -168,28 +189,49 @@ img.shoes-img{
 	padding-bottom: 1em;
 }
 
+/**** Review ****/
 
-.item-button{
-	color:#F9D999;
-
-	text-align:center;
-	text-decoration: none;
-	box-sizing: content-box;
-	border-radius: 1.4em;
-	padding: 0.5em 2em 0.5em 2em;
-	display:inline-block;
-
-	border: solid #404C77;
-	background-color:#404C77;
+.reviews{
+	margin:7em 4em 4em 4em;
+	text-align: left;
 }
 
+.review-title{
+	text-align: center;
+}
 
-.item-button:hover, .item-button:focus, .item-button:active {
-	color: white;
-	background-color: #404C77;
-	border: solid #404C77;
-	box-shadow: 0em 0.3em 0.6em rgb(25,35,71, .5);
-	transform: scale(.95);
+.review-username{
+	color:#404C77;
+	margin-left:2em;
+}
+
+.review-comment{
+	padding-left: 1em;
+}
+
+.review-comment-title{
+	margin-bottom: 8px;
+}
+
+.review-comment-detail{
+	padding-left: 1em;
+	margin-top: 8px;
+	max-width: 600px;
+}
+
+.rating{
+	margin-top:0.5em;
+	margin-left:2em;
+	letter-spacing: 3px;
+}
+
+.checked {
+  color: #F1C162;
+}
+
+section:not([id]){
+	padding: 0.6em;
+	border-bottom: 1px dotted #000066;
 }
 
 
@@ -240,10 +282,13 @@ img.shoes-img{
 
 
 /*----------- Styling for About Page -----------*/
-.about-title{
-	text-align: center;
+
+
+.title{
 	font-size: 45px;
-	margin-bottom: 1em; 
+	text-align: center;
+	margin-bottom: 1em;
+
 }
 
 .about-detail{
@@ -270,26 +315,8 @@ img.shoes-img{
 }
 
 .brand-button{
-	flex: 1 1 auto;
 	max-width: 16rem;
-
-	padding: 0.1rem;
-	margin-bottom: 5rem;
-	margin-right: 4rem;
-	margin-left: 5.5em;
-
-	text-align:center;
-	text-decoration: none;
-	box-sizing: content-box;
-	border-radius: 1.4em;
-	padding: 0.75em 4em 0.75em 4em;
-
-	display:inline-block;
-
-	transition-property: color;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-out;
-	-webkit-transition: color 0.3s ease-out;
+	margin: 0 4rem 5rem 4rem;
 	color:#404C77;
 	border: solid #F9D999;
 	background-color:#F9D999;
@@ -297,105 +324,11 @@ img.shoes-img{
 
 .brand-button:hover, .brand-button:focus, .brand-button:active {
 	color: #F9D999;
-	background-color: #404C77;
-	border: solid #404C77;
-	box-shadow: 0em 0.3em 0.6em rgb(25,35,71, .5);
-	transform: scale(.95);
 }
 
-.brand-nike-button{
-	flex: 1 1 auto;
+.brand-name-button{
 	max-width: 16rem;
-
-	padding: 0.1rem;
-	margin-bottom: 5rem;
-	margin-right: 4rem;
-	margin-left: 5.5em;
-
-	text-align:center;
-	text-decoration: none;
-	box-sizing: content-box;
-	border-radius: 1.4em;
-	padding: 0.75em 4em 0.75em 4em;
-
-	display:inline-block;
-
-	color: #F9D999;
-	background-color: #404C77;
-	border: solid #404C77;
-}
-
-.brand-van-button{
-	flex: 1 1 auto;
-	max-width: 16rem;
-
-	padding: 0.1rem;
-	margin-bottom: 5rem;
-	margin-right: 4rem;
-	margin-left: 5.5em;
-
-	text-align:center;
-	text-decoration: none;
-	box-sizing: content-box;
-	border-radius: 1.4em;
-	padding: 0.75em 4em 0.75em 4em;
-
-	display:inline-block;
-
-	color: #F9D999;
-	background-color: #404C77;
-	border: solid #404C77;
-}
-
-.brand-adidas-button{
-	flex: 1 1 auto;
-	max-width: 16rem;
-
-	padding: 0.1rem;
-	margin-bottom: 5rem;
-	margin-right: 4rem;
-	margin-left: 5.5em;
-
-	text-align:center;
-	text-decoration: none;
-	box-sizing: content-box;
-	border-radius: 1.4em;
-	padding: 0.75em 4em 0.75em 4em;
-
-	display:inline-block;
-
-	color: #F9D999;
-	background-color: #404C77;
-	border: solid #404C77;
-}
-
-.brand-converse-button{
-	flex: 1 1 auto;
-	max-width: 16rem;
-
-	padding: 0.1rem;
-	margin-bottom: 5rem;
-	margin-right: 4rem;
-	margin-left: 5.5em;
-
-	text-align:center;
-	text-decoration: none;
-	box-sizing: content-box;
-	border-radius: 1.4em;
-	padding: 0.75em 4em 0.75em 4em;
-
-	display:inline-block;
-
-	color: #F9D999;
-	background-color: #404C77;
-	border: solid #404C77;
-}
-
-.shop-title{
-	font-size: 45px;
-	text-align: center;
-	margin-bottom: 1em;
-
+	margin: 0 4rem 5rem 4rem;
 }
 
 .product-list{
@@ -406,7 +339,6 @@ img.shoes-img{
 	margin-bottom: 5rem;
 	margin-right: 8rem;
 }
-
 
 .product-list:hover, .product-list:focus, .product-list:active{
 	cursor: pointer;
