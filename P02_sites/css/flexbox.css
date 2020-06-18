@@ -140,6 +140,33 @@ div.rating {
   flex-direction: row;
 }
 
+/*Cart*/
+.cart, .purchase{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.purchase{
+  width:66%;
+  justify-content: space-around;
+}
+
+
+.order-summary{
+  width:28%;
+}
+
+.check-out {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+}
 
 /*Grid*/
 

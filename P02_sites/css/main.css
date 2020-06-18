@@ -97,7 +97,6 @@ input[type=submit]:hover {
 
 }
 
-
 .contact-detail{
 	text-align: center;
 	margin-bottom: 2em;
@@ -146,6 +145,58 @@ div.confirmation{
 	text-align: center;
 }
 
+/********************** Cart ************************/
+.cart{
+	margin: 2em;
+}
+
+.purchase, .order-summary{
+	margin:1em;
+	padding: 1.5em;
+	border: 1px solid #A4A4A4 ;
+}
+
+.purchase-title{
+	font-size: 1.2em;
+}
+.summary-title{
+	font-size:25px;
+	text-align: center;
+	margin:0.8em;
+}
+.summary-list:not([id]){
+	padding-top:0.5rem;
+	padding-bottom:0.5rem;
+	border-bottom: 1px dotted #B6B6B6;
+}
+
+.purchase-description{
+	margin:2rem;
+}
+
+
+dd:not(.value){
+	padding-left:8rem;
+	text-align: right;
+}
+
+.value{
+	color: #5D6D7E;
+	font-size:0.7em;
+}
+
+tbody{
+	line-height: 1.5em;
+}
+
+th{
+	padding-right: 1em;
+}
+
+.checkout-button{
+	margin-top: 1em;
+}
+
 
 /****************  Product listing   ***************/
 
@@ -162,7 +213,7 @@ div.confirmation{
 }
 
 img.shoes-img{
-	width:75%;
+	width:80%;
 }
 
 .detail-text {
@@ -349,7 +400,7 @@ section:not([id]){
 }
 
 .product-name:hover, .product-name:focus, .product-name:active{
-	color: solid red;
+	color: red;
 	text-decoration: underline;
 	margin: 0.5rem 0 0 0;
 	transition: color 0.3s ease-out;
