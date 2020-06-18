@@ -24,11 +24,7 @@ h1{
 	font-size: 45px;
 }
 
-h2{
-	color:#E28E83;
-}
-
-h3{
+h2, h3{
 	color:#E28E83;
 }
 
@@ -93,9 +89,6 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
-
-}
 
 .contact-detail{
 	text-align: center;
@@ -104,15 +97,16 @@ input[type=submit]:hover {
 }
 
 .contact-form {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 5em;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 5em;
 }
 
 .contact-button{
 	text-align: center;
 }
 
+/********************** MAIN BUTTON ************************/
 .main-button{
 	text-align:center;
 	text-decoration: none;
