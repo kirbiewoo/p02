@@ -35,7 +35,7 @@
   -ms-flex-grow: 1;
   flex-grow: 1;
   width: auto;
- 
+
 }
 
 .width-adjust{
@@ -97,10 +97,10 @@
 
 .item-text{
   flex-wrap: wrap;
-	flex: 1 1 70%;
-	line-height:2em;
-	padding: 1em;
-	
+  flex: 1 1 70%;
+  line-height:2em;
+  padding: 1em;
+
 }
 
 /*Review*/
@@ -141,6 +141,8 @@ div.rating {
 }
 
 /*Cart*/
+
+
 .cart, .purchase{
   display: -webkit-flex;
   display: -ms-flex;
@@ -225,6 +227,17 @@ div.rating {
 
 .grid-6-text{
   flex:auto;
+}
+
+@media(max-width:1129px){
+  .purchase{
+    width:100%;
+  }
+
+  .order-summary{
+    width:100%;
+  }
+  
 }
 
 @media(max-width:1000px){

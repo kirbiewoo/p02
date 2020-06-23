@@ -396,9 +396,8 @@ section:not([id]){
 }
 
 .brand-nav{
-	margin-left: 1em;
-	padding-left: 1em;
-	margin-bottom: 1em;
+	text-align: center;
+
 }
 
 .brand-button{
@@ -421,31 +420,28 @@ section:not([id]){
 .product-list{
 	flex: 1 1 auto;
 	max-width: 16rem;
-
 	padding: 0.1rem;
 	margin-bottom: 5rem;
 	margin-right: 8rem;
-}
-
-.product-list:hover, .product-list:focus, .product-list:active{
-	cursor: pointer;
+	text-decoration: none;
 }
 
 
 .product-name{
-	color: #F9D999;
+	color: #ED5C4D;
+	font-size:1.2em;
 	margin: 0.5rem 0 0 0;
 }
 
 .product-name:hover, .product-name:focus, .product-name:active{
-	color: red;
+	color: #E28E83;
 	text-decoration: underline;
 	margin: 0.5rem 0 0 0;
 	transition: color 0.3s ease-out;
 }
 
 .product-price{
-	text-decoration-line: none;
+	text-decoration: none;
 	color: rgb(114, 114, 114);
 	margin: 1rem 0 0 0;
 }
