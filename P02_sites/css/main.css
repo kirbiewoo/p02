@@ -15,8 +15,9 @@
 
 
 body {
-  font-family: 'sf', sans-serif;
-  color:#666666;
+	margin:0;
+	font-family: 'sf', sans-serif;
+	color:#666666;
 } 
 
 h1{
@@ -64,29 +65,31 @@ p.company-info{
 }
 
 
-/********************** CONTACT ************************/
+/********************** CONTACT/ CHECK OUT ************************/
 
-div.contact-form{
+.contact-form, .checkout-form{
 	margin:0 3rem 5rem 3rem;
 }
 
-form.contact-type input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+form.c-forms input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
 }
 
+
+
 input[type=submit] {
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 
@@ -96,15 +99,51 @@ input[type=submit] {
 	color: #404C77;
 }
 
-.contact-form {
+.contact-form, .checkout-form {
 	border-radius: 5px;
 	background-color: #f2f2f2;
 	padding: 5em;
 }
 
-.contact-button{
+.contact-button, .checkout-button{
 	text-align: center;
 }
+
+a {
+	color: #2196F3;
+}
+
+hr {
+	border: 1px solid lightgrey;
+}
+
+span.price {
+	float: right;
+	color: grey;
+}
+.col-25,
+.col-50,
+.col-75 {
+	padding: 0 16px;
+}
+
+
+
+label {
+	margin-bottom: 10px;
+	display: block;
+}
+
+.payment-options {
+	margin-bottom: 20px;
+	padding: 7px 0;
+	font-size: 24px;
+}
+
+.co-button{
+	margin-top: 1em;
+}
+
 
 /********************** MAIN BUTTON ************************/
 .main-button{
@@ -124,6 +163,11 @@ input[type=submit] {
 	border: solid #404C77;
 	background-color:#404C77;
 }
+
+.small-button{
+	padding: 0.55em 4em 0.55em 4em;
+}
+
 .main-button:hover, .main-button:focus, .main-button:active {
 	color: white;
 	background-color: #404C77;
@@ -187,8 +231,8 @@ th{
 	padding-right: 1em;
 }
 
-.checkout-button{
-	margin-top: 1em;
+.cart-button{
+	margin-top: 2em;
 }
 
 
@@ -211,11 +255,11 @@ img.shoes-img{
 }
 
 .detail-text {
-  width: 75%;
-  position: relative;
-  margin-top:17rem;
-  padding: 0 2rem;
-  line-height: 1.3em;
+	width: 75%;
+	position: relative;
+	margin-top:17rem;
+	padding: 0 2rem;
+	line-height: 1.3em;
 
 }
 
@@ -270,7 +314,7 @@ img.shoes-img{
 }
 
 .checked {
-  color: #F1C162;
+	color: #F1C162;
 }
 
 section:not([id]){
@@ -281,10 +325,10 @@ section:not([id]){
 
 /************** Grid for Shop ************/
 .grid-1, .grid-3 {
-  padding: 2em;
-  margin: 1em;
-  text-align: center;
-  background-color:grey;
+	padding: 2em;
+	margin: 1em;
+	text-align: center;
+	background-color:grey;
 
 }
 .grid-2-img, .grid-2-text{
@@ -407,6 +451,11 @@ section:not([id]){
 }
 
 
+/***********************  ***********************/
+
+
+
+
 
 /*********************** HEADER ***********************/
 
@@ -431,9 +480,9 @@ div.main-nav{
 
 .nav-button:hover, .nav-button:focus, .nav-button:active  {
 	color: #526D83;
-    border-bottom: 2px solid #FBBE4B;
-    -webkit-transition: color 0.3s ease-out;
-  	transition: color 0.3s ease-out;
+	border-bottom: 2px solid #FBBE4B;
+	-webkit-transition: color 0.3s ease-out;
+	transition: color 0.3s ease-out;
 }
 
 .cart-icon{
@@ -453,48 +502,53 @@ img.logo {
 
 /******************  Search bar  *****************************/
 form.example input[type=text] {
-  padding: 4px;
-  font-size: 16px;
-  border: 1px ;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
+	padding: 4px;
+	font-size: 16px;
+	border: 1px ;
+	float: left;
+	width: 80%;
+	background: #f1f1f1;
 }
 
 form.example button {
-  float: left;
-  width: 20%;
-  padding: 4px;
-  background: #404C77;
-  color: white;
-  font-size: 16px;
-  border: none; 
+	float: left;
+	width: 20%;
+	padding: 4px;
+	background: #404C77;
+	color: white;
+	font-size: 16px;
+	border: none; 
 }
 
 form.example button:hover, form.example button:active, form.example button:focus{
 	background: #F9D999;
 	-webkit-transition: color 0.3s ease-out;
-  	transition: color 0.3s ease-out;
+	transition: color 0.3s ease-out;
 }
 
 
 /***************FOOTER*************/
 footer{
+	padding-bottom: 2em;
 	text-align: center;
+	background:#253273;
 }
 .footer-contact{
 	line-height:50%;
 }
+.contact-info{
+	color: #FAEACA;
+}
 .footer-link{
-  color: #253273;
-  text-decoration: underline;
-  letter-spacing: 0.05em;
+	color: #FAEACA;
+	text-decoration: underline;
+	letter-spacing: 0.05em;
 }
 
 .footer-link:hover, .footer-link:focus .footer-link:active{
-  color: #F9D999;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
+	color: #E2887C;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
 }
 
 header:not([id]){

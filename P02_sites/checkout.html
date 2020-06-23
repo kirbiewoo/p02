@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,35 +18,105 @@
 	<!--HEADER-->
 	<header>
 		<div class="main-nav">
-		  	<a href="homepage.html"><img src="img/logo.png" class="brand-logo" alt="logo for brand"></a>
-		    <div class="width-adjust"></div>
-		    <a class="nav-button" href="homepage.html">HOME</a>
-		    <a class="nav-button" href="shop.html">SHOP</a>
-		    <a class="nav-button" href="about.html">ABOUT</a>
-		    <a class="nav-button" href="contact.html">CONTACT</a>
+			<a href="homepage.html"><img src="img/logo.png" class="brand-logo" alt="logo for brand"></a>
+			<div class="width-adjust"></div>
+			<a class="nav-button" href="homepage.html">HOME</a>
+			<a class="nav-button" href="shop.html">SHOP</a>
+			<a class="nav-button" href="about.html">ABOUT</a>
+			<a class="nav-button" href="contact.html">CONTACT</a>
 
-		    <div class="width-adjust"></div>
-		    <a class="cart-icon" href="cart.html"><i class='fas fa-shopping-cart'></i></a> 
-		    <!--Tutorial from https://www.w3schools.com/howto/howto_css_search_button.asp-->
-		    <div class="search-field">
-		    	<form class="example" action="about.html">
-				  <input type="text" placeholder="Search.." name="search">
-				  <button type="submit"><i class="fa fa-search"></i></button>
+			<div class="width-adjust"></div>
+			<a class="cart-icon" href="cart.html"><i class='fas fa-shopping-cart'></i></a> 
+			<!--Tutorial from https://www.w3schools.com/howto/howto_css_search_button.asp-->
+			<div class="search-field">
+				<form class="example" action="about.html">
+					<input type="text" placeholder="Search.." name="search">
+					<button type="submit"><i class="fa fa-search"></i></button>
 				</form>
-		    </div>
+			</div>
 		</div>
 	</header>
 
 	<h3 class="title">Check out</h3>
 
-	
+	<div class="checkout-form">
+
+		<div class="co_row">
+			<div class="col-75">
+				<div class="container">
+					<form class="c-forms" action="checkout_confirm.html">
+
+						<div class="co_row">
+							<div class="col-50">
+								<h3>Billing Address</h3>
+								<label for="fname">Full Name</label>
+								<input type="text" id="fname" name="firstname" placeholder="Jane Doe">
+								<label for="email">Email</label>
+								<input type="text" id="email" name="email" placeholder="jane.doe@gmail.com">
+								<label for="adr">Address</label>
+								<input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+								<label for="city">City</label>
+								<input type="text" id="city" name="city" placeholder="Vancouver">						
+								<label for="state">State</label>
+								<input type="text" id="state" name="state" placeholder="BC">
+								<label for="zip">Zip</label>
+								<input type="text" id="zip" name="zip" placeholder="V5K 1B3">
+
+
+								<div class="col-50">
+									<h3>Payment</h3>
+									<label for="fname">Accepted Cards</label>
+									<div class="payment-options">
+										<i class="fab fa-cc-visa"></i>
+										<i class="fab fa-cc-amex"></i>
+										<i class="fab fa-cc-mastercard"></i>
+										<i class="fab fa-cc-discover"></i>
+										<i class="fab fa-cc-apple-pay "></i>
+									</div>
+
+									<label for="cname">Name on Card</label>
+									<input type="text" id="cname" name="cardname" placeholder="Jane Doe">
+									<label for="ccnum">Credit card number</label>
+									<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+									<label for="expmonth">Exp Month</label>
+									<input type="text" id="expmonth" name="expmonth" placeholder="December">
+									<div class="row">
+										<div class="col-50">
+											<label for="expyear">Exp Year</label>
+											<input type="text" id="expyear" name="expyear" placeholder="2024">
+										</div>
+										<div class="col-50">
+											<label for="cvv">CVV</label>
+											<input type="text" id="cvv" name="cvv" placeholder="123">
+										</div>
+									</div>
+								</div><!-- payment col-50 -->
+							</div><!-- Billing address col-50 -->
+							<label>
+								<input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+							</label>
+						</div><!-- billing address co-row -->
+
+						<div class="checkout-button">
+							<a class="main-button small-button co-button" href="contact_confirmation.html">Checkout</a>
+						</div>
+
+					</form>
+
+				</div><!-- Container -->
+			</div> <!-- col-75 -->
+		</div> <!-- co_row -->
+
+	</div><!-- checkout-form -->
+
+
 	<!--FOOTER-->
 	<footer>
 		<div class="footer-logo">
-			<img src="img/logo.png" class="brand-logo" alt="logo for brand">
+			<img src="img/logo_footer.png" class="brand-logo" alt="logo for brand">
 		</div>
 		<div class="footer-info">
-			<p class="contact-info">Address may come here</p>
+			<p class="contact-info">542 W. 15th Street Vancouver BC</p>
 			<p class="contact-info">customer@jaykaycustoms.ca</p>
 		</div>
 		<div class="footer-links">
@@ -56,7 +126,7 @@
 			<a class="footer-link" href="citation.html">Citation</a>
 			<a class="footer-link" href="https://github.com/kirbiewoo/p02" target="_blank">Github Repository</a>		
 		</div>		
-	</footer>                       
+	</footer>                         
 </body>
 
 
