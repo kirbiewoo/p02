@@ -44,17 +44,14 @@ shop-button{
 	/*Tutorial from https://www.w3schools.com/html/html_images_background.asp*/
 	background-image: url(../img/home2.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	width: 100%;
+	background-size: 100%;
 	height: 50rem;
 
 }
 
 .shop-now-btn{
-	width: 100%;
-	padding: 35em 0em 0em 55em;
-
+	position:relative;
+	text-align: center;
 }
 
 p.company-name{
