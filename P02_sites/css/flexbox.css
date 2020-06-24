@@ -14,6 +14,13 @@
   justify-content: space-around;
 }
 
+@media all and (max-width:30em){
+.shop-now-btn{
+  display:block;
+ }
+}
+
+
 
 /*Main navigation*/
 .main-nav{
@@ -82,7 +89,7 @@
 }
 
 .brand-name-button{
-  flex: 1 1 auto;
+ flex: 1 1 auto;
 }
 
 /*Product listing*/

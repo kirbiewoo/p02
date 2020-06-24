@@ -32,17 +32,17 @@ h2, h3{
 h4{
 	color:#404C77;
 }
-
-p{
+shop-button{
 	letter-spacing: 2px;
 	color: #404C77;
+
 }
 
 /*******************  HOME  *********************/
 
 .home-image{
 	/*Tutorial from https://www.w3schools.com/html/html_images_background.asp*/
-	background-image: url(../img/home.jpg);
+	background-image: url(../img/home2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -51,10 +51,12 @@ p{
 
 }
 
-.home-text{
-	text-align: left;
-	padding:25em 0em 0em 5em;
+.shop-now-btn{
+	width: 100%;
+	padding: 35em 0em 0em 55em;
+
 }
+
 p.company-name{
 	color: #ed5c4d;
 	font-size: 55px;
@@ -167,6 +169,7 @@ label {
 .small-button{
 	padding: 0.55em 4em 0.55em 4em;
 }
+
 
 .main-button:hover, .main-button:focus, .main-button:active {
 	color: white;
@@ -375,13 +378,17 @@ section:not([id]){
 	font-size: 45px;
 	text-align: center;
 	margin-bottom: 1em;
+	margin-top: 1em;
 
 }
 
 .about-detail{
-	text-align: left;
-	line-height: 200%;
+	
+	text-align: center;
+	line-height: 300%;
 	padding: 1em 7em 2em 7em;
+	margin-bottom: 10em;
+	margin-top: 3em;
 }
 
 .about-img{
@@ -527,7 +534,7 @@ form.example button:hover, form.example button:active, form.example button:focus
 footer{
 	padding-bottom: 2em;
 	text-align: center;
-	background:#253273;
+	background:#404c77;
 }
 .footer-contact{
 	line-height:50%;
