@@ -59,6 +59,10 @@ shop-button{
   flex-basis:40rem;
 }
 
+.hero-button{
+	margin-bottom: 3em;
+}
+
 .shop-now-btn h1{
   letter-spacing: 1.75px;
 }
@@ -343,10 +347,12 @@ img.shoes-img{
 	color: #F1C162;
 }
 
+/*
 section:not([id]){
 	padding: 0.6em;
 	border-bottom: 1px dotted #000066;
 }
+*/
 
 
 /************** Grid for Shop ************/
@@ -408,15 +414,14 @@ section:not([id]){
 .about-detail{
 	
 	text-align: center;
-	line-height: 300%;
-	padding: 1em 7em 2em 7em;
-	margin-bottom: 10em;
-	margin-top: 3em;
+	line-height: 230%;
+	padding: 1em 7em 1em 7em;
+	margin:3em 0 5em 0;
 }
 
 .about-img{
-
-	padding: 1em 2em 5em 3.3em;
+	text-align: center;
+	padding: 2em;
 }
 
 /*----------- Styling for Shop Page -----------*/
@@ -474,6 +479,16 @@ section:not([id]){
 	text-decoration: none;
 	color: rgb(114, 114, 114);
 	margin: 1rem 0 0 0;
+}
+
+.item-lists{
+	margin-bottom: 1.2em;
+}
+
+.item-lists:hover, .item-lists:focus, .item-lists:active{
+	transition: 0.3s ease-out;
+	opacity: 0.6;
+	border: 1px dotted #E28E83;
 }
 
 
