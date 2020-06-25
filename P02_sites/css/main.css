@@ -500,7 +500,7 @@ section:not([id]){
 
 /*********************** HEADER ***********************/
 
-img.brand-logo{
+.brand-logo{
 	padding-top:1em;
 }
 
@@ -512,7 +512,7 @@ div.main-nav{
 	display: inline-block;
 	font-size: 1em;
 	color: #F1C162;
-	margin: 0em 1.5em;
+	margin: 0em 1em;
 	border: none;
 	font-weight: bold;
 	letter-spacing: 0.1em;
@@ -528,7 +528,7 @@ div.main-nav{
 
 .cart-icon{
 	font-size: 20px;
-	padding-right:8px;
+	padding-right:0.7em;
 	color:#404C77;
 }
 
