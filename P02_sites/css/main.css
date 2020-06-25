@@ -56,7 +56,7 @@ shop-button{
 .shop-now-btn{
   text-align: center;
   margin: auto;
-  flex-basis:40rem;
+  flex-basis:30rem;
 }
 
 .hero-button{
@@ -90,7 +90,6 @@ shop-button{
  margin-left: 2em;
  margin-right: 2em;
 }
-
 
 
 
