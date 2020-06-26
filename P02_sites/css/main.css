@@ -460,6 +460,10 @@ section:not([id]){
 	text-decoration: none;
 }
 
+.product-list:hover, .product-list:focus, .product-list:active,{
+
+	}
+
 .category-list{
 	flex: 1 1 auto;
 	position: relative;
