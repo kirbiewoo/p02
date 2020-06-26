@@ -460,6 +460,15 @@ section:not([id]){
 	text-decoration: none;
 }
 
+.category-list{
+	flex: 1 1 auto;
+	position: relative;
+	max-width: 16rem;
+	margin-bottom: 3rem;
+	margin-top: 2rem;
+}
+
+
 
 .product-name{
 	color: #ED5C4D;

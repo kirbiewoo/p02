@@ -14,6 +14,7 @@
   justify-content: space-around;
 }
 
+
 @media all and (max-width:30em){
   .shop-now-btn{
       display:block;
@@ -249,6 +250,8 @@ div.rating {
   flex:auto;
 }
 
+
+/*-----------MEDIA QUERIES -----------*/
 @media(max-width:1129px){
   .purchase{
     width:100%;
