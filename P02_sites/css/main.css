@@ -286,7 +286,7 @@ img.shoes-img{
 .detail-text {
 	width: 75%;
 	position: relative;
-	margin-top:17rem;
+	margin-top:5rem;
 	padding: 0 2rem;
 	line-height: 1.3em;
 
@@ -302,9 +302,76 @@ img.shoes-img{
 }
 
 .item-detail{
-	font-size:15px;
-	padding-bottom: 1em;
+	font-size:13px;
+	padding-bottom: 7em;
+	padding-top: 2em;
+
 }
+
+/*tutorial learnt from https://www.w3schools.com/howto/howto_custom_select.asp*/
+/*********      Size Selector           ******************/
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #F9D999;
+  border-radius: 10px;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #F9D999;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
 
 /**** Review ****/
 
@@ -451,6 +518,10 @@ section:not([id]){
 	margin: 0 4rem 5rem 4rem;
 }
 
+.product-img:hover, .product-img:focus, .product-img:active{
+	box-shadow: 0 4px 8px 0 rgba(64, 76, 119, 0.24), 0 6px 20px 0 rgba(64, 76, 119, 0.4)
+}
+
 .product-list{
 	flex: 1 1 auto;
 	max-width: 16rem;
@@ -460,9 +531,6 @@ section:not([id]){
 	text-decoration: none;
 }
 
-.product-list:hover, .product-list:focus, .product-list:active,{
-
-	}
 
 .category-list{
 	flex: 1 1 auto;
@@ -478,14 +546,17 @@ section:not([id]){
 	color: #ED5C4D;
 	font-size:1.2em;
 	margin: 0.5rem 0 0 0;
+	text-decoration: none;
 }
 
+/*
 .product-name:hover, .product-name:focus, .product-name:active{
 	color: #E28E83;
 	text-decoration: underline;
 	margin: 0.5rem 0 0 0;
 	transition: color 0.3s ease-out;
 }
+*/
 
 .product-price{
 	text-decoration: none;
@@ -497,15 +568,13 @@ section:not([id]){
 	margin-bottom: 1.2em;
 }
 
+/*
 .item-lists:hover, .item-lists:focus, .item-lists:active{
 	transition: 0.3s ease-out;
 	opacity: 0.6;
 	border: 1px dotted #E28E83;
 }
-
-
-/***********************  ***********************/
-
+*/
 
 
 
@@ -613,9 +682,6 @@ footer:not([id]){
 	padding-top:1.5rem;
 	border-top: 1px solid #526D83;
 }
-
-
-
 
 
 
