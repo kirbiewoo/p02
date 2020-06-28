@@ -521,8 +521,12 @@ section:not([id]){
 	margin: 0 4rem 5rem 4rem;
 }
 
+.product-img{
+    box-shadow: 0 4px 8px 0 rgba(64, 76, 119, 0.09), 0 6px 20px 0 rgba(64, 76, 119, 0.09);
+}
+
 .product-img:hover, .product-img:focus, .product-img:active{
-	box-shadow: 0 4px 8px 0 rgba(64, 76, 119, 0.24), 0 6px 20px 0 rgba(64, 76, 119, 0.4)
+   box-shadow: 0 4px 8px 0 rgba(64, 76, 119, 0.24), 0 6px 20px 0 rgba(64, 76, 119, 0.4);
 }
 
 .product-list{
