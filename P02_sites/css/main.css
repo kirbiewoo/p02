@@ -20,6 +20,13 @@ body {
 	color:#666666;
 } 
 
+p{
+	color: #404c77;
+	font-size: 14px;
+	letter-spacing: 0.12em;
+	line-height: 1.9em;
+}
+
 h1{
 	color: #ed5c4d;
 	font-size: 45px;
@@ -32,6 +39,7 @@ h2, h3{
 h4{
 	color:#404C77;
 }
+
 shop-button{
 	letter-spacing: 2px;
 	color: #404C77;
@@ -502,6 +510,11 @@ section:not([id]){
 .brand-nav{
 	text-align: center;
 
+}
+
+.brand-def{
+	/*text-align: center;*/
+	padding-bottom: 45px;
 }
 
 .brand-button{
