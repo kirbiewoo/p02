@@ -33,26 +33,16 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
-  align-items: -webkit-flex-end;
-  align-items: -ms-flex-end;
-  align-items: flex-end;
+  justify-content: space-around;
 }
 
-.brand-logo{
+img.brand-logo{
   -webkit-flex-grow: 1;
   -ms-flex-grow: 1;
   flex-grow: 1;
   width: auto;
-
 }
 
-.width-adjust{
-
-  -webkit-flex-grow:50;
-  -ms-flex-grow:50;
-  flex-grow: 50;
-
-}
 
 .shop-icon{
   display: -webkit-flex;
@@ -90,8 +80,8 @@
   display: -ms-flex;
   display: flex;
 
-  flex-wrap: -webkit-flex;
-  flex-wrap: -ms-flex;
+  flex-wrap: -webkit-wrap;
+  flex-wrap: -ms-wrap;
   flex-wrap: wrap;
 
   justify-content: space-around;
@@ -108,23 +98,24 @@
 }
 
 /*Product listing*/
+
 .details{
-	display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
 
-}
-
-.item-img{
-	flex-wrap: wrap;
-}
-
-.item-text{
+  flex-wrap: -webkit-wrap;
+  flex-wrap: -ms-wrap;
   flex-wrap: wrap;
-  flex: 1 1 70%;
-  line-height:2em;
-  padding: 1em;
 
+  justify-content: space-around
+  ;
 }
 
+
+.detail-text{
+  width: 40%
+}
 
 
 /*Review*/
@@ -171,15 +162,17 @@ div.rating {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
+
+  flex-wrap: -webkit-wrap;
+  flex-wrap: -ms-wrap;
   flex-wrap: wrap;
+
   justify-content: space-between;
 }
 
 .purchase{
   width:66%;
-  justify-content: space-around;
+  
 }
 
 
@@ -293,13 +286,26 @@ div.rating {
     flex: 0 0 100%;
   }
 
+   .nav-button{
+  font-size: 0.8em;
+  }
+
 }
 
-@media(max-width: 800px){
-   img.brand-logo{
-    width:80%;
-   }
-   form.example input[type=text] {
+@media(max-width: 765px){
+  .detail-text{
+    width: 100%
+  }
+ 
+}
+
+@media(max-width:605px){
+  .grid-5{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+
+  form.example input[type=text] {
     display: none;
   }
   form.example button {
@@ -310,31 +316,12 @@ div.rating {
     font-size: 16px;
     border: none; 
   }
-  .nav-button{
-  font-size: 0.8em;
-  }
 }
 
-@media(max-width:600px){
-  .grid-5{
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media(max-width:550px){
-  img.brand-logo{
-    width:65%;
-   }
-  .nav-button{
-  font-size: 0.7em;
-  }
-  .cart-icon{
-  font-size: 16px;
-  padding-right:0.5em;
-  }
-
-  form.example button {
-  font-size: 14px;
+@media(max-width:430px){
+  .nav-logos{
+    width: 100%;
+    text-align: center;
   }
 }
 

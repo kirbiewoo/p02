@@ -99,7 +99,9 @@ shop-button{
  margin-right: 2em;
 }
 
-
+.container{
+	margin-top: 2.5em;
+}
 
 /********************** CONTACT/ CHECK OUT ************************/
 
@@ -109,23 +111,13 @@ shop-button{
 
 form.c-forms input[type=text], select, textarea {
 	width: 100%;
-	padding: 12px;
+	padding: 14px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
 	margin-top: 6px;
 	margin-bottom: 16px;
 	resize: vertical;
-}
-
-
-
-input[type=submit] {
-	color: white;
-	padding: 12px 20px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
 }
 
 
@@ -145,6 +137,23 @@ input[type=submit] {
 	text-align: center;
 }
 
+/**icons*/
+.fa-cc-visa{
+	color: navy;
+}
+.fa-cc-amex{
+	color: blue;
+}
+.fa-cc-mastercard{
+	color: red;
+}
+.fa-cc-discover{
+	color: orange;
+}
+.fa-cc-apple-pay{
+	color: black;
+}
+
 a {
 	color: #2196F3;
 }
@@ -157,9 +166,7 @@ span.price {
 	float: right;
 	color: grey;
 }
-.col-25,
-.col-50,
-.col-75 {
+.col-25, .col-50, .col-75 {
 	padding: 0 16px;
 }
 
@@ -282,18 +289,11 @@ th{
 .details{
 	padding-top:2em; 
 }
-.detail-img{
+.shoes-img{
 	width: 100%;
-	display: inline-block;
-}
-
-img.shoes-img{
-	width:80%;
 }
 
 .detail-text {
-	width: 75%;
-	position: relative;
 	margin-top:5rem;
 	padding: 0 2rem;
 	line-height: 1.3em;
@@ -303,18 +303,21 @@ img.shoes-img{
 
 .item-name{
 	font-size: 30px;
+	line-height: 1em;
 }
 
 .item-price{
 	font-size: 18px;
+	margin: 1em 0 0 0;
+	text-align: right;
 }
 
 .item-detail{
 	font-size:13px;
-	padding-bottom: 7em;
-	padding-top: 2em;
+	padding: 1em 0 4em 0;
 
 }
+
 
 /*tutorial learnt from https://www.w3schools.com/howto/howto_custom_select.asp*/
 /*********      Size Selector           ******************/
@@ -322,7 +325,9 @@ img.shoes-img{
 
 .custom-select {
   position: relative;
-  margin: 0rem 4rem 0rem 62rem;
+  width: 235px;
+  margin: 0 0 2rem 0 ;
+  text-align: center;
 }
 
 .custom-select select {
@@ -337,7 +342,7 @@ img.shoes-img{
 
 /* Style the arrow inside the select element: */ 
 .select-selected:after {
-  position: absolute;
+  position: relative;
   content: "";
   top: 14px;
   right: 10px;
@@ -536,6 +541,8 @@ section:not([id]){
 
 .product-img{
     box-shadow: 0 4px 8px 0 rgba(64, 76, 119, 0.09), 0 6px 20px 0 rgba(64, 76, 119, 0.09);
+    width: 100%;
+
 }
 
 .product-img:hover, .product-img:focus, .product-img:active{
@@ -546,8 +553,7 @@ section:not([id]){
 	flex: 1 1 auto;
 	max-width: 16rem;
 	padding: 0.1rem;
-	margin-bottom: 5rem;
-	margin-right: 8rem;
+
 	text-decoration: none;
 }
 
@@ -605,12 +611,20 @@ section:not([id]){
 	padding-top:1em;
 }
 
-div.main-nav{
-	padding: 0 2em 0 2em;
+img.logo {
+	width:auto;
+	height:2em;
+}
+
+.main-nav{
+	align-items: center;
+}
+
+.nav-names, .nav-icons{
+	padding-top:1em;
 }
 
 .nav-button{
-	display: inline-block;
 	font-size: 1em;
 	color: #F1C162;
 	margin: 0em 1em;
@@ -629,7 +643,8 @@ div.main-nav{
 
 .cart-icon{
 	font-size: 20px;
-	padding-right:0.7em;
+	padding-left:1em;
+
 	color:#404C77;
 }
 
@@ -637,10 +652,6 @@ div.main-nav{
 	color:#F9D999;
 }
 
-img.logo {
-	width:auto;
-	height:2em;
-}
 
 /******************  Search bar  *****************************/
 form.example input[type=text] {

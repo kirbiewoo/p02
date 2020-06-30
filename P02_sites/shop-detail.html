@@ -18,23 +18,30 @@
 	<!--HEADER-->
 	<header>
 		<div class="main-nav">
-			<a href="homepage.html"><img src="img/logo.png" class="brand-logo" alt="logo for brand"></a>	
-			<div class="width-adjust"></div>
-			<a class="nav-button" href="shop.html">SHOP</a>
-			<a class="nav-button" href="about.html">ABOUT</a>
-			<a class="nav-button" href="contact.html">CONTACT</a>
 
-
-			<div class="width-adjust"></div>
-			<a class="cart-icon" href="cart.html"><i class='fas fa-shopping-cart'></i></a> 
-			<!--Tutorial from https://www.w3schools.com/howto/howto_css_search_button.asp-->
-			<div class="search-field">
-				<form class="example" action="about.html">
-					<input type="text" placeholder="Search.." name="search">
-					<button type="submit"><i class="fa fa-search"></i></button>
-				</form>
+			<div class="nav-logos">
+				<a href="homepage.html" class="brand-logo"><img src="img/logo.png" class="brand-logo" alt="logo for brand"></a>
 			</div>
+
+			<div class="nav-names">
+				<a class="nav-button" href="shop.html">SHOP</a>
+				<a class="nav-button" href="about.html">ABOUT</a>
+				<a class="nav-button" href="contact.html">CONTACT</a>
+			</div>
+
+			<div class="nav-icons">	
+				<!--Tutorial from https://www.w3schools.com/howto/howto_css_search_button.asp-->
+				<div class="search-field">
+					<form class="example" action="about.html">
+						<input type="text" placeholder="Search.." name="search">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+					<a class="cart-icon" href="cart.html"><i class='fas fa-shopping-cart'></i></a> 
+				</div>
+			</div>
+
 		</div>
+
 	</header>
 
 	<!-- Product Details-->
@@ -49,7 +56,27 @@
 				<p class="item-price"> $595 </p>
 				<p class="item-detail">Extending the brands' longstanding partnership, the Supreme x Nike SB Dunk Low is a part of a triple-release pack launched in September 2019. This version is decked out in white full-grain leather with a Varsity Red synthetic toe box. Jeweled Swooshes embellish the sides while a semi-transparent rubber tread updates the outsole. True to the sneaker's collaborative nature, embroidered co-branding is featured throughout the shoe.</p>
 
-				<div>
+				<!--- tutorial from https://www.w3schools.com/howto/howto_custom_select.asp ------>
+
+				<div class="button-placement">
+
+				<!--------- Size Selector ------------->
+				<div class="custom-select">
+					<select>
+						<option value="0">Select size:</option>
+						<option value="1">US 5</option>
+						<option value="2">US 6</option>
+						<option value="3">US 7</option>
+						<option value="4">US 8</option>
+						<option value="5">US 9</option>
+						<option value="6">US 10</option>
+						<option value="7">US 11</option>
+						<option value="8">US 12</option>
+						<option value="9">US 13</option>
+					</select>
+				</div>
+
+
 					<a href="cart.html" class="item-button main-button">Add to Cart</a>
 				</div>
 
@@ -57,25 +84,9 @@
 		</div>
 	</div>
 
-	<!--- tutorial from https://www.w3schools.com/howto/howto_custom_select.asp ------>
 	
-	<!--------- Size Selector ------------->
-	<div class="custom-select" style="width:235px">
-	  <select>
-	    <option value="0">Select size:</option>
-	    <option value="1">US 5</option>
-	    <option value="2">US 6</option>
-	    <option value="3">US 7</option>
-	    <option value="4">US 8</option>
-	    <option value="5">US 9</option>
-	    <option value="6">US 10</option>
-	    <option value="7">US 11</option>
-	    <option value="8">US 12</option>
-	    <option value="9">US 13</option>
-	  </select>
-	</div>
 
-<!---------product review ----->
+	<!---------product review ----->
 	<div class="product-review">
 		<div class="reviews">
 			<h2 class="title"> Reviews </h2>
@@ -122,7 +133,7 @@
 	<!--FOOTER-->
 	<footer>
 		<div class="footer-logo">
-			<img src="img/logo_footer.png" class="brand-logo" alt="logo for brand">
+			<img class ="brand-logo" src="img/logo_footer.png" alt="logo for brand">
 		</div>
 		<div class="footer-info">
 			<p class="contact-info">542 W. 15th Street Vancouver BC</p>
