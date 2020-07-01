@@ -15,14 +15,6 @@
 }
 
 
-
-@media all and (max-width:30em){
-  .shop-now-btn{
-      display:block;
-   }
-}
-
-
 /*-------------Main navigation-------*/
 .main-nav{
 	display: -webkit-flex;
@@ -74,8 +66,8 @@ img.brand-logo{
 
 }
 
-/*---------------About-------------*/
-.about-img{
+/*---------------About/ Search-------------*/
+.about-img, .search-bar{
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -108,11 +100,8 @@ img.brand-logo{
   flex-wrap: -ms-wrap;
   flex-wrap: wrap;
 
-  justify-content: space-around
-  ;
+  justify-content: space-around;
 }
-
-
 
 
 .detail-text{
@@ -127,28 +116,20 @@ img.brand-logo{
   display: -ms-flex;
   display: flex;
 
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
+  flex-wrap: -webkit-wrap;
+  flex-wrap: -ms-wrap;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+
+  justify-content: space-around;
 }
 
 .review-name {
   width:20%;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
 .review-comment {
-  width:80%;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  flex-direction: column;
+  width:70%;
+  
 }
 
 div.rating {
@@ -174,9 +155,7 @@ div.rating {
 
 .purchase{
   width:66%;
-  
 }
-
 
 .order-summary{
   width:28%;
@@ -250,8 +229,8 @@ div.rating {
 
 
 /*-----------MEDIA QUERIES -----------*/
-@media(max-width:1129px){
-  .purchase{
+@media(max-width:1168px){
+  .purchase, .purchase-img {
     width:100%;
   }
 
@@ -288,8 +267,8 @@ div.rating {
     flex: 0 0 100%;
   }
 
-   .nav-button{
-  font-size: 0.8em;
+  .nav-button{
+    font-size: 0.8em;
   }
 
 }
@@ -298,14 +277,23 @@ div.rating {
   .detail-text{
     width: 100%
   }
- 
+
+  .review-name {
+    width:100%;
+  }
+
+  .review-comment {
+    width:100%;
+  }
+
+
+
 }
 
 @media(max-width:605px){
   .grid-5{
     grid-template-columns: repeat(1, 1fr);
   }
-
 
   form.example input[type=text] {
     display: none;

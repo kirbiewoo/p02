@@ -49,22 +49,23 @@ shop-button{
 /*******************  HOME  *********************/
 
 .hero-banner{
-  display: flex;
-  background-color: #EFEFEF;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	background-color: #EFEFEF;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .hero-img{
-  min-width: 60%;
+	min-width: 60%;
 }
 
 .shop-now-btn{
-  text-align: center;
-  margin: auto;
-  flex-basis:30rem;
+	text-align: center;
+	margin: auto;
+	flex-basis:30rem;
+	display:block;
 }
 
 .hero-button{
@@ -72,31 +73,31 @@ shop-button{
 }
 
 .shop-now-btn h1{
-  letter-spacing: 1.75px;
+	letter-spacing: 1.75px;
 }
 
 .shop-now-btn h2{
-  letter-spacing: 1px;
-  line-height: 1.4rem;
-  font-size: 25px;
-  margin: auto;
-  margin-bottom: 2em;
-  color: #404c77;
+	letter-spacing: 1px;
+	line-height: 1.4rem;
+	font-size: 25px;
+	margin: auto;
+	margin-bottom: 2em;
+	color: #404c77;
 }
 
 .btn-position{
-  margin: auto;
+	margin: auto;
 }
 
 .product-list{
-  padding: 0.8rem;
-  margin-bottom: 3rem;
+	padding: 0.8rem;
+	margin-bottom: 3rem;
 }
 
 
 .hot-items-title{
- margin-left: 2em;
- margin-right: 2em;
+	margin-left: 2em;
+	margin-right: 2em;
 }
 
 .container{
@@ -118,6 +119,10 @@ form.c-forms input[type=text], select, textarea {
 	margin-top: 6px;
 	margin-bottom: 16px;
 	resize: vertical;
+}
+
+form.c-forms textarea{
+	height:250px;
 }
 
 .contact-detail{
@@ -195,11 +200,6 @@ label {
 	padding: 0.75em 5em 0.75em 5em;
 
 	display:inline-block;
-
-	transition-property: color;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-out;
-	-webkit-transition: color 0.3s ease-out;
 	color:#F9D999;
 	border: solid #404C77;
 	background-color:#404C77;
@@ -215,6 +215,10 @@ label {
 	border: solid #404C77;
 	box-shadow: 0em 0.3em 0.6em rgb(25,35,71, .5);
 	transform: scale(.95);
+	transition-property: color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	-webkit-transition: color 0.3s ease-out;
 }
 
 
@@ -250,7 +254,7 @@ div.confirmation{
 }
 
 .purchase-description{
-	margin:2rem;
+	margin:2rem 1rem 2rem 1rem;
 }
 
 
@@ -319,68 +323,68 @@ th{
 /* The container must be positioned relative: */
 
 .custom-select {
-  position: relative;
-  width: 235px;
-  margin: 0 0 2rem 0 ;
-  text-align: center;
+	position: relative;
+	width: 235px;
+	margin: 0 0 2rem 0 ;
+	text-align: center;
 }
 
 .custom-select select {
-  display: none; /*hide original SELECT element:*/
-  
+	display: none; /*hide original SELECT element:*/
+
 }
 
 .select-selected {
-  background-color: #F9D999;
-  border-radius: 10px;
+	background-color: #F9D999;
+	border-radius: 10px;
 }
 
 /* Style the arrow inside the select element: */ 
 .select-selected:after {
-  position: relative;
-  content: "";
-  top: 14px;
-  right: -12px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
+	position: relative;
+	content: "";
+	top: 14px;
+	right: -12px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: #fff transparent transparent transparent;
 } 
 
 
 /* Point the arrow upwards when the select box is open (active): */ 
 .select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: -12px;
+	border-color: transparent transparent #fff transparent;
+	top: -12px;
 }
 
 
 /* style the items (options), including the selected item: */ 
 .select-items div,.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
+	color: #ffffff;
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+	cursor: pointer;
 }
 
 /* Style items (options): */ 
 .select-items {
-  position: absolute;
-  background-color: #F9D999;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
+	position: absolute;
+	background-color: #F9D999;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
 }
 
 /* Hide the items when the select box is closed: */ 
 .select-hide {
-  display: none;
+	display: none;
 }
 
 .select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 
@@ -393,16 +397,16 @@ th{
 
 .review-title{
 	text-align:left;
-	padding-left: 2em;
+	padding-left: 1em;
 }
 
 .review-username{
 	color:#404C77;
-	margin-left:2em;
+	margin-left:1.5em;
 }
 
 .review-comment{
-	padding-left: 1em;
+	padding-left: 2em;
 }
 
 .review-comment-title{
@@ -412,7 +416,7 @@ th{
 .review-comment-detail{
 	padding-left: 1em;
 	margin-top: 8px;
-	max-width: 600px;
+	max-width: 700px;
 }
 
 .rating{
@@ -425,6 +429,115 @@ th{
 	color: #F1C162;
 }
 
+/************** Modals ************/
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+form.r-form input[type=text], select, textarea {
+	width: 100%;
+	padding: 14px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-bottom: 0.9em;
+	resize: vertical;
+}
+
+form.r-form textarea{
+	height:150px;
+	margin-top:0;
+}
+
+.rev-btn-placement{
+	text-align: right;
+}
+
+.review-btn{
+	border:none;
+	color:#253273;
+	text-decoration: underline;
+	font-size:0.9em;
+	letter-spacing: 0.05em;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+}
+
+.review-btn:hover, .review-btn:focus, .review-btn:active{
+	color: #F0B929;
+	text-decoration: none;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+}
+
+.rv {
+  font-size: 2em;
+  margin-top:0.9em;
+  margin-bottom:0.4em;
+}
+
+.cancel-button{
+	color:#E28E83;
+	text-decoration: underline;
+	text-align:center;
+	text-decoration: none;
+	box-sizing: content-box;
+	border-radius: 1.4em;
+	display:inline-block;
+	border: solid #404C77;
+	margin: 0.5em;
+}
+.cancel-button:hover, .cancel-button:focus, .cancel-button:active {
+	color: #E28E83;
+	text-decoration: none;
+	border: solid #E28E83;
+	box-shadow: 0em 0.3em 0.6em rgb(25,35,71, .5);
+	transform: scale(.95);
+	transition: color 0.3s;
+	-webkit-transition: color 0.3s;
+}
+
+.review-button{
+	margin:0.5em;
+}
+
+.modal-buttons{
+	text-align: center;
+}
 
 /************** Grid for Shop ************/
 .grid-1, .grid-3 {
@@ -531,13 +644,13 @@ th{
 }
 
 .product-img{
-    box-shadow: 0 4px 8px 0 rgba(64, 76, 119, 0.09), 0 6px 20px 0 rgba(64, 76, 119, 0.09);
-    width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(64, 76, 119, 0.09), 0 6px 20px 0 rgba(64, 76, 119, 0.09);
+	width: 100%;
 
 }
 
 .product-img:hover, .product-img:focus, .product-img:active{
-   box-shadow: 0 4px 8px 0 rgba(64, 76, 119, 0.24), 0 6px 20px 0 rgba(64, 76, 119, 0.4);
+	box-shadow: 0 4px 8px 0 rgba(64, 76, 119, 0.24), 0 6px 20px 0 rgba(64, 76, 119, 0.4);
 }
 
 .product-list{
@@ -554,7 +667,6 @@ th{
 	position: relative;
 	max-width: 16rem;
 	margin-bottom: 3rem;
-	margin-top: 2rem;
 }
 
 
@@ -581,12 +693,7 @@ th{
 /*********************** HEADER ***********************/
 
 .brand-logo{
-	padding-top:1em;
-}
-
-img.logo {
-	width:auto;
-	height:2em;
+	padding-top:1.5em;
 }
 
 .main-nav{
@@ -617,7 +724,6 @@ img.logo {
 .cart-icon{
 	font-size: 20px;
 	padding-left:1em;
-
 	color:#404C77;
 }
 
@@ -628,8 +734,8 @@ img.logo {
 
 /******************  Search bar  *****************************/
 form.example input[type=text] {
-	padding: 4px;
-	font-size: 16px;
+	padding: 6px;
+	font-size: 14px;
 	border: 1px ;
 	float: left;
 	width: 80%;
@@ -639,14 +745,49 @@ form.example input[type=text] {
 form.example button {
 	float: left;
 	width: 20%;
-	padding: 4px;
+	padding: 6px;
 	background: #404C77;
 	color: white;
-	font-size: 16px;
+	font-size: 14px;
 	border: none; 
 }
 
 form.example button:hover, form.example button:active, form.example:focus{
+	background: #F9D999;
+	-webkit-transition: color 0.3s ease-out;
+	transition: color 0.3s ease-out;
+}
+
+/******************  Search PG  *****************************/
+.search-sub{
+	text-align: center;
+	margin:0 0 2em 0;
+}
+
+form.search-pg{
+	width:65%;
+}
+
+form.search-pg input[type=text] {
+	padding: 0.5em;
+	font-size: 20px;
+	border: 2px ;
+	float: left;
+	width: 85%;
+	background: #f1f1f1;
+}
+
+form.search-pg button {
+	padding:0.5em;
+	float: left;
+	width: 15%;
+	background: #404C77;
+	color: white;
+	font-size: 20px;
+	border: none; 
+}
+
+form.search-pg button:hover, form.search-pg button:active, form.search-pg:focus{
 	background: #F9D999;
 	-webkit-transition: color 0.3s ease-out;
 	transition: color 0.3s ease-out;

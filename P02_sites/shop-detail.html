@@ -32,7 +32,7 @@
 			<div class="nav-icons">	
 				<!--Tutorial from https://www.w3schools.com/howto/howto_css_search_button.asp-->
 				<div class="search-field">
-					<form class="example" action="about.html">
+					<form class="example" action="search.html">
 						<input type="text" placeholder="Search.." name="search">
 						<button type="submit"><i class="fa fa-search"></i></button>
 					</form>
@@ -62,21 +62,21 @@
 
 				<div class= "button-placement">
 
-				<!--------- Size Selector ------------->
-				<div class="custom-select">
-					<select>
-						<option value="0">Select size</option>
-						<option value="1">US 5</option>
-						<option value="2">US 6</option>
-						<option value="3">US 7</option>
-						<option value="4">US 8</option>
-						<option value="5">US 9</option>
-						<option value="6">US 10</option>
-						<option value="7">US 11</option>
-						<option value="8">US 12</option>
-						<option value="9">US 13</option>
-					</select>
-				</div>
+					<!--------- Size Selector ------------->
+					<div class="custom-select">
+						<select>
+							<option value="0">Select size</option>
+							<option value="1">US 5</option>
+							<option value="2">US 6</option>
+							<option value="3">US 7</option>
+							<option value="4">US 8</option>
+							<option value="5">US 9</option>
+							<option value="6">US 10</option>
+							<option value="7">US 11</option>
+							<option value="8">US 12</option>
+							<option value="9">US 13</option>
+						</select>
+					</div>
 
 
 					<a href="cart.html" class="item-button main-button">Add to Cart</a>
@@ -90,65 +90,106 @@
 	<div class="product-review">
 		<div class="reviews">
 			<h2 class="review-title"> Reviews </h2>
-			<section class="review-section">
-				<div class="review-name">
-					<h3 class="review-username"> Christy</h3>
-					<!--Tutorial from: https://www.w3schools.com/howto/howto_css_star_rating.asp-->
-					<div class="rating">
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
+
+			<!-- Write a Review Modal
+				Tutorial from: https://www.w3schools.com/howto/howto_css_modals.asp -->
+				<!-- Trigger/Open The Modal -->
+				<div class="rev-btn-placement">
+					<button id="review-btn" class="review-btn">Write a Review</button>
+				</div>
+
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<h2>Write your Review</h2>
+						<form class="r-form">
+							<label for="user-name">Name:</label>
+							<input type="text" id="user-name" name="username" placeholder="First and Last Name">
+							<label for="review-title">Review Title:</label>
+							<input type="text" id="review-title" name="reviewtitle" placeholder="Review Title">
+							<label for="reviews">Review:</label>
+							<textarea id="reviews" name="review" placeholder="Tell us your thoughts..."></textarea>
+							<p>Star Rating:</p>
+							<div class="review-star">
+								<span class="fa fa-star checked rv"></span>
+								<span class="fa fa-star checked rv"></span>
+								<span class="fa fa-star checked rv"></span>
+								<span class="fa fa-star checked rv"></span>
+								<span class="fa fa-star checked rv"></span>
+							</div>
+
+							<div class="modal-buttons">
+								<a class="small-button cancel-button" href="shop-detail.html">Cancel</a>
+								<a class="main-button small-button review-button" href="shop-detail.html">Submit</a>
+							</div>
+
+						</form>
 					</div>
+
 				</div>
 
-				<div class="review-comment">
-					<h4 class="review-comment-title">Best shoes EVER!!</h4>
-					<p class="review-comment-detail">First time purchasing shoes here, and I'm in love with this! I really recomment this brand if you are planning to purchase any customized shoes for yourself. </p>
-				</div>
-			</section>
-
-			<section class="review-section">
-				<div class="review-name">
-					<h3 class="review-username"> David Rogers</h3>
-					<!--Tutorial from: https://www.w3schools.com/howto/howto_css_star_rating.asp-->
-					<div class="rating">
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star"></span>
+				<section class="review-section">				
+					<div class="review-name">
+						<h3 class="review-username"> Christy</h3>
+						<!--Tutorial from: https://www.w3schools.com/howto/howto_css_star_rating.asp-->
+						<div class="rating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+						</div>
 					</div>
-				</div>
-				
-				<div class="review-comment">
-					<h4 class="review-comment-title">The design is very intricate!!! love it so muchieeee</h4>
-					<p class="review-comment-detail">Wow, this is an unique design and  very hard to get anywhere else! You can only find it at Jay.Kay!! </p>
-				</div>
-			</section>
-		</div>
-	</div>
-	
-	<!--FOOTER-->
-	<footer>
-		<div class="footer-logo">
-			<img class ="brand-logo" src="img/logo_footer.png" alt="logo for brand">
-		</div>
-		<div class="footer-info">
-			<p class="contact-info">542 W. 15th Street Vancouver BC</p>
-			<p class="contact-info">customer@jaykaycustoms.ca</p>
-		</div>
-		<div class="footer-links">
-			<a class="footer-link" href="styleguide.html">Styleguide</a>
-			<a class="footer-link" href="sitemap.html">Sitemap</a>
-			<a class="footer-link" href="wireframes.html">Wireframes</a>
-			<a class="footer-link" href="citation.html">Citation</a>
-			<a class="footer-link" href="https://github.com/kirbiewoo/p02" target="_blank">Github Repository</a>		
-		</div>		
-	</footer>  
 
-	<script src="js/main.js"></script>                       
-</body>
+					<div class="review-comment">
+						<h4 class="review-comment-title">Best shoes EVER!!</h4>
+						<p class="review-comment-detail">First time purchasing shoes here, and I'm in love with this! I really recomment this brand if you are planning to purchase any customized shoes for yourself. </p>
+					</div>
+				</section>
 
-</html>
+				<section class="review-section">
+					<div class="review-name">
+						<h3 class="review-username"> David Rogers</h3>
+						<!--Tutorial from: https://www.w3schools.com/howto/howto_css_star_rating.asp-->
+						<div class="rating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+						</div>
+					</div>
+
+					<div class="review-comment">
+						<h4 class="review-comment-title">The design is very intricate!!! love it so muchieeee</h4>
+						<p class="review-comment-detail">Wow, this is an unique design and  very hard to get anywhere else! You can only find it at Jay.Kay!! </p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<!--FOOTER-->
+		<footer>
+			<div class="footer-logo">
+				<img class ="brand-logo" src="img/logo_footer.png" alt="logo for brand">
+			</div>
+			<div class="footer-info">
+				<p class="contact-info">542 W. 15th Street Vancouver BC</p>
+				<p class="contact-info">customer@jaykaycustoms.ca</p>
+			</div>
+			<div class="footer-links">
+				<a class="footer-link" href="styleguide.html">Styleguide</a>
+				<a class="footer-link" href="sitemap.html">Sitemap</a>
+				<a class="footer-link" href="wireframes.html">Wireframes</a>
+				<a class="footer-link" href="citation.html">Citation</a>
+				<a class="footer-link" href="https://github.com/kirbiewoo/p02" target="_blank">Github Repository</a>		
+			</div>		
+		</footer>  
+
+		<script src="js/main.js"></script>                   
+	</body>
+
+	</html>
