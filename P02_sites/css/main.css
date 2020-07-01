@@ -120,7 +120,6 @@ form.c-forms input[type=text], select, textarea {
 	resize: vertical;
 }
 
-
 .contact-detail{
 	text-align: center;
 	margin-bottom: 2em;
@@ -137,7 +136,7 @@ form.c-forms input[type=text], select, textarea {
 	text-align: center;
 }
 
-/**icons*/
+/**-----icons------*/
 .fa-cc-visa{
 	color: navy;
 }
@@ -169,7 +168,6 @@ span.price {
 .col-25, .col-50, .col-75 {
 	padding: 0 16px;
 }
-
 
 
 label {
@@ -210,7 +208,6 @@ label {
 .small-button{
 	padding: 0.55em 4em 0.55em 4em;
 }
-
 
 .main-button:hover, .main-button:focus, .main-button:active {
 	color: white;
@@ -297,9 +294,7 @@ th{
 	margin-top:5rem;
 	padding: 0 2rem;
 	line-height: 1.3em;
-
 }
-
 
 .item-name{
 	font-size: 30px;
@@ -345,7 +340,7 @@ th{
   position: relative;
   content: "";
   top: 14px;
-  right: 10px;
+  right: -12px;
   width: 0;
   height: 0;
   border: 6px solid transparent;
@@ -356,7 +351,7 @@ th{
 /* Point the arrow upwards when the select box is open (active): */ 
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent #fff transparent;
-  top: 7px;
+  top: -12px;
 }
 
 
@@ -389,6 +384,8 @@ th{
 }
 
 
+
+
 /**** Review ****/
 
 .reviews{
@@ -397,7 +394,7 @@ th{
 }
 
 .review-title{
-	text-align: center;
+	text-align:left;
 }
 
 .review-username{
@@ -428,13 +425,6 @@ th{
 .checked {
 	color: #F1C162;
 }
-
-/*
-section:not([id]){
-	padding: 0.6em;
-	border-bottom: 1px dotted #000066;
-}
-*/
 
 
 /************** Grid for Shop ************/
@@ -520,6 +510,8 @@ section:not([id]){
 .brand-def{
 	text-align: center;
 	padding-bottom: 45px;
+	padding-right: 5em;
+	padding-left: 5em;
 }
 
 .brand-button{
@@ -575,14 +567,6 @@ section:not([id]){
 	text-decoration: none;
 }
 
-/*
-.product-name:hover, .product-name:focus, .product-name:active{
-	color: #E28E83;
-	text-decoration: underline;
-	margin: 0.5rem 0 0 0;
-	transition: color 0.3s ease-out;
-}
-*/
 
 .product-price{
 	text-decoration: none;
@@ -593,16 +577,6 @@ section:not([id]){
 .item-lists{
 	margin-bottom: 1.2em;
 }
-
-/*
-.item-lists:hover, .item-lists:focus, .item-lists:active{
-	transition: 0.3s ease-out;
-	opacity: 0.6;
-	border: 1px dotted #E28E83;
-}
-*/
-
-
 
 
 /*********************** HEADER ***********************/
@@ -673,7 +647,7 @@ form.example button {
 	border: none; 
 }
 
-form.example button:hover, form.example button:active, form.example button:focus{
+form.example button:hover, form.example button:active, form.example:focus{
 	background: #F9D999;
 	-webkit-transition: color 0.3s ease-out;
 	transition: color 0.3s ease-out;

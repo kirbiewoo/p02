@@ -23,7 +23,7 @@
 }
 
 
-/*Main navigation*/
+/*-------------Main navigation-------*/
 .main-nav{
 	display: -webkit-flex;
   display: -ms-flex;
@@ -74,7 +74,7 @@ img.brand-logo{
 
 }
 
-/*About*/
+/*---------------About-------------*/
 .about-img{
   display: -webkit-flex;
   display: -ms-flex;
@@ -88,7 +88,7 @@ img.brand-logo{
 
 }
 
-/*Shop Page*/
+/*-------------Shop Page----------*/
 .brand-button{
   flex: 1 1 auto;
 }
@@ -97,7 +97,7 @@ img.brand-logo{
  flex: 1 1 auto;
 }
 
-/*Product listing*/
+/*-----------Product listing---------*/
 
 .details{
   display: -webkit-flex;
@@ -113,12 +113,15 @@ img.brand-logo{
 }
 
 
+
+
 .detail-text{
   width: 40%
 }
 
 
-/*Review*/
+
+/*----------Review---------*/
 .review-section {
   display: -webkit-flex;
   display: -ms-flex;
@@ -155,8 +158,7 @@ div.rating {
   flex-direction: row;
 }
 
-/*Cart*/
-
+/*--------------Cart-----------*/
 
 .cart, .purchase{
   display: -webkit-flex;
@@ -215,7 +217,7 @@ div.rating {
   flex: 75%;
 }
 
-/*Grid*/
+/*----------Grid-------*/
 
 .grid-1, .grid-3{
   display: flex;
@@ -229,7 +231,7 @@ div.rating {
   justify-content: space-around; 
 }
 
-/*From https://learncssgrid.com*/
+/*------From https://learncssgrid.com-----*/
 .grid-5{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
