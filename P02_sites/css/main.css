@@ -384,8 +384,6 @@ th{
 }
 
 
-
-
 /**** Review ****/
 
 .reviews{
@@ -395,6 +393,7 @@ th{
 
 .review-title{
 	text-align:left;
+	padding-left: 2em;
 }
 
 .review-username{
