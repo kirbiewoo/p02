@@ -50,8 +50,77 @@
 	<div class="product-detail">
 		<div class="details">
 			<div class="detail-img">
-				<img src="img/supreme.png" alt="nike x supreme" class="shoes-img">
-			</div> 
+				<!---<img src="img/supreme.png" alt="nike x supreme" class="shoes-img"> -->
+
+
+
+			<!--tutorial from https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp?fbclid=IwAR2CpsrN1zdFV5hoX6G-wHvBOmzKGp7LshUtr2GbrDREGBAIu4PvnyJa6CE-->
+			<!-- Container for the image gallery -->
+			<div class="gallery">
+
+			  <!-- Full-width images with number text -->
+			  <div class="mySlides">
+			    <div class="numbertext">1 / 6</div>
+			      <img src="img/supreme1.png" class="gallery-img">
+			  </div>
+
+			  <div class="mySlides">
+			    <div class="numbertext">2 / 6</div>
+			      <img src="img/supreme2.png"  class="gallery-img">
+			  </div>
+
+			  <div class="mySlides">
+			    <div class="numbertext">3 / 6</div>
+			      <img src="img/supreme3.png"  class="gallery-img">
+			  </div>
+
+			  <div class="mySlides">
+			    <div class="numbertext">4 / 6</div>
+			      <img src="img/supreme4.png"  class="gallery-img">
+			  </div>
+
+			  <div class="mySlides">
+			    <div class="numbertext">5 / 6</div>
+			      <img src="img/supreme5.png"  class="gallery-img">
+			  </div>
+
+			  <div class="mySlides">
+			    <div class="numbertext">6 / 6</div>
+			      <img src="img/supreme6.png" >
+			  </div>
+
+			  <!-- Next and previous buttons -->
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			  <!-- Image text -->
+			  <div class="caption-container">
+			    <p id="caption"></p>
+			  </div>sx
+
+			  <!-- Thumbnail images -->
+			  <div class="row">
+			    <div class="column">
+			      <img class="demo cursor" src="img/supreme1.1.png" style="width:100%" onclick="currentSlide(1)" alt="Overview of Nike x Supreme sneaker">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="img/supreme2.1.png" style="width:100%" onclick="currentSlide(2)" alt="Overview of Nike x Supreme sneaker">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="img/supreme3.1.png" style="width:100%" onclick="currentSlide(3)" alt="Overview of Nike x Supreme sneaker">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="img/supreme4.1.png" style="width:100%" onclick="currentSlide(4)" alt="Overview of Nike x Supreme sneaker">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="img/supreme5.1.png" style="width:100%" onclick="currentSlide(5)" alt="Overview of Nike x Supreme sneaker">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="img/supreme6.1.png" style="width:100%" onclick="currentSlide(6)" alt="Overview of Nike x Supreme sneaker">
+			    </div>
+			  </div>
+			</div> <!--end of gallery-->
+			</div> <!--end of detail-img---->
 
 			<div class="detail-text">
 				<h3 class="item-name"> Supreme x Dunk SB Low  </h3>
