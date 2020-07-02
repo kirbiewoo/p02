@@ -89,6 +89,7 @@ img.brand-logo{
  flex: 1 1 auto;
 }
 
+
 /*-----------Product listing---------*/
 
 .details{
@@ -103,9 +104,8 @@ img.brand-logo{
   justify-content: space-around;
 }
 
-
 .detail-text{
-  width: 40%
+  width: 40%;
 }
 
 

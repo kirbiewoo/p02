@@ -122,7 +122,7 @@ document.addEventListener("click", closeAllSelect);
 /*--tutorial from https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp?
 fbclid=IwAR2CpsrN1zdFV5hoX6G-wHvBOmzKGp7LshUtr2GbrDREGBAIu4PvnyJa6CE*/
 /*-- javascript for the image gallery ---*/
-
+var slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -152,5 +152,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
-
