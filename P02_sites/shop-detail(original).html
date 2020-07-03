@@ -50,74 +50,75 @@
 	<div class="product-detail">
 		<div class="details"> 
 			<div class="detail-img">
-				
-				<div id="small-img">
-					<ul id="img-nav">
-						<li>
-							<a href="#picture1">
-								<img alt="supreme1" src="img/supreme1.png">
-							</a>
-						</li>
-						<li>
-							<a href="#picture2">
-								<img alt="supreme2" src="img/supreme2.png">
-							</a>
-						</li>
-						<li>
-							<a href="#picture3">
-								<img alt="supreme3" src="img/supreme3.png">
-							</a>
-						</li>
-						<li>
-							<a href="#picture4">
-								<img alt="supreme4" src="img/supreme4.png">
-							</a>
-						</li>
-						<li>
-							<a href="#picture5">
-								<img alt="supreme5" src="img/supreme5.png">
-							</a>
-						</li>
-						<li>
-							<a href="#picture6">
-								<img alt="supreme6" src="img/supreme6.png">
-							</a>
-						</li>
-					</ul>
+				<!---<img src="img/supreme.png" alt="nike x supreme" class="shoes-img"> -->
 
-					<div id="big-img">
-						<div class="img-display">
-							<a href="#picture1">
-								<img alt="supreme1" src="img/supreme1.png">
-							</a>
+
+				<!--tutorial from https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp?fbclid=IwAR2CpsrN1zdFV5hoX6G-wHvBOmzKGp7LshUtr2GbrDREGBAIu4PvnyJa6CE-->
+				<!-- Container for the image gallery -->
+				<div class="gallery">
+
+					<!-- Full-width images with number text -->
+					<div class="mySlides">
+						<div class="numbertext">1 / 6</div>
+						<img src="img/supreme1.png" class="gallery-img">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2 / 6</div>
+						<img src="img/supreme2.png"  class="gallery-img">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3 / 6</div>
+						<img src="img/supreme3.png"  class="gallery-img">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">4 / 6</div>
+						<img src="img/supreme4.png"  class="gallery-img">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">5 / 6</div>
+						<img src="img/supreme5.png"  class="gallery-img">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">6 / 6</div>
+						<img src="img/supreme6.png" >
+					</div>
+
+					<!-- Next and previous buttons -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<!-- Image text -->
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+					<!-- Thumbnail images -->
+					<div class="row">
+						<div class="column">
+							<img class="demo cursor" src="img/supreme1.1.png" style="width:100%" onclick="currentSlide(1)" alt="Overview of Nike x Supreme sneaker">
 						</div>
-						<div class="img-display">
-							<a href="#picture2">
-								<img alt="supreme2" src="img/supreme2.png">
-							</a>
+						<div class="column">
+							<img class="demo cursor" src="img/supreme2.1.png" style="width:100%" onclick="currentSlide(2)" alt="Overview of Nike x Supreme sneaker">
 						</div>
-						<div class="img-display">
-							<a href="#picture3">
-								<img alt="supreme3" src="img/supreme3.png">
-							</a>
+						<div class="column">
+							<img class="demo cursor" src="img/supreme3.1.png" style="width:100%" onclick="currentSlide(3)" alt="Overview of Nike x Supreme sneaker">
 						</div>
-						<div class="img-display">
-							<a href="#picture4">
-								<img alt="supreme4" src="img/supreme4.png">
-							</a>
+						<div class="column">
+							<img class="demo cursor" src="img/supreme4.1.png" style="width:100%" onclick="currentSlide(4)" alt="Overview of Nike x Supreme sneaker">
 						</div>
-						<div class="img-display">
-							<a href="#picture5">
-								<img alt="supreme5" src="img/supreme5.png">
-							</a>
+						<div class="column">
+							<img class="demo cursor" src="img/supreme5.1.png" style="width:100%" onclick="currentSlide(5)" alt="Overview of Nike x Supreme sneaker">
 						</div>
-						<div class="img-display">
-							<a href="#picture6">
-								<img alt="supreme6" src="img/supreme6.png">
-							</a>
+						<div class="column">
+							<img class="demo cursor" src="img/supreme6.1.png" style="width:100%" onclick="currentSlide(6)" alt="Overview of Nike x Supreme sneaker">
 						</div>
 					</div>
-				</div>
+				</div> <!--end of gallery-->
 			</div> <!--end of detail-img---->
 
 			<div class="detail-text">
@@ -175,15 +176,15 @@
 						<!--Star rating
 							Tutorial From: https://codepen.io/MitsuGM/pen/vGJjxM -->
 							<div class="review-star">
-								<input id="radio1" type="radio" name="star" value="5" class="star">
+								<input id="radio1" type="radio" name="star" value="5" class="star" />
 								<label for="radio1">&#9733;</label>
-								<input id="radio2" type="radio" name="star" value="4" class="star">
+								<input id="radio2" type="radio" name="star" value="4" class="star" />
 								<label for="radio2">&#9733;</label>
-								<input id="radio3" type="radio" name="star" value="3" class="star">
+								<input id="radio3" type="radio" name="star" value="3" class="star" />
 								<label for="radio3">&#9733;</label>
-								<input id="radio4" type="radio" name="star" value="2" class="star">
+								<input id="radio4" type="radio" name="star" value="2" class="star" />
 								<label for="radio4">&#9733;</label>
-								<input id="radio5" type="radio" name="star" value="1" class="star">
+								<input id="radio5" type="radio" name="star" value="1" class="star" />
 								<label for="radio5">&#9733;</label>
 							</div>
 
@@ -253,8 +254,11 @@
 				</div>		
 			</footer>  
 
+		<!--	
+			<script src="js/main.js"></script> 
 
-
+		-->
+		
 		</body>
 
 		</html>
