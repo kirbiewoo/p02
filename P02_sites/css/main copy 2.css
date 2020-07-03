@@ -317,94 +317,51 @@ th{
 
 }
 
-/******* Image Gallery *******/
-#small-img {
-	width: 20%;
-	overflow: hidden;
-	position: relative;
-	z-index: 1;
-	margin: 100px auto;
-	border: 2px solid #003C72;
+/********************** Image Gallery *********************/
+/*Tutorial from https://www.w3docs.com/snippets/css/how-to-create-a-simple-css-gallery-without-using-javascript.html */
 
+#gallery {
+   width: 600px;
+   overflow: hidden;
+   position: relative;
+   z-index: 1;
+   margin: 100px auto;
+   border: 2px solid #003C72;
 }
 
 #img-nav {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	justify-content: space-between;
-}
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   justify-content: space-between;
+ }
 
 #img-nav li {
-	padding: 0;
-	margin: 0;
-	margin: 5px 0 20px;
-}
+   padding: 0;
+   margin: 0;
+   margin: 5px 0 20px;
+ }
 
 #img-nav li a img {
-	display: inline-block;
-	border: none;
+   display: block;
+   border: none;
 }
 
 #img-nav li a {
-	display: block;
+   display: block;
 }
 
-#big-pic{
-	width: 600px;
-	height: 400px;
-	overflow: hidden;
-	float: left;
+#big-img {
+   width: 600px;
+   height: 400px;
+   overflow: hidden;
+   float: left;
 }
 
-#big-pic img {
-	width: 100%;
+#big-img img {
+   width: 100%;
 }
-
-
-/**** Review ****/
-
-.reviews{
-	margin:7em 4em 4em 4em;
-	text-align: left;
-}
-
-.review-title{
-	text-align:left;
-	padding-left: 1em;
-}
-
-.review-username{
-	color:#404C77;
-	margin-left:1.5em;
-}
-
-.review-comment{
-	padding-left: 2em;
-}
-
-.review-comment-title{
-	margin-bottom: 8px;
-}
-
-.review-comment-detail{
-	padding-left: 1em;
-	margin-top: 8px;
-	max-width: 700px;
-}
-
-.rating{
-	margin-top:0.5em;
-	margin-left:2em;
-	letter-spacing: 3px;
-}
-
-.checked {
-	color: #F1C162;
-}
-
-
 
 
 /************** Modals ************/

@@ -15,17 +15,17 @@ for (i = 0; i < l; i++) {
   a.setAttribute("class", "select-selected");
   a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
   x[i].appendChild(a);
-  /* For each element, create a new DIV that will contain the option list: */
+  /* For each element, create a new DIV that will contain the option list: */ 
   b = document.createElement("DIV");
   b.setAttribute("class", "select-items select-hide");
   for (j = 1; j < ll; j++) {
     /* For each option in the original select element,
-    create a new DIV that will act as an option item: */
+    create a new DIV that will act as an option item: */ 
     c = document.createElement("DIV");
     c.innerHTML = selElmnt.options[j].innerHTML;
     c.addEventListener("click", function(e) {
         /* When an item is clicked, update the original select box,
-        and the selected item: */
+        and the selected item: */   /*
         var y, i, k, s, h, sl, yl;
         s = this.parentNode.parentNode.getElementsByTagName("select")[0];
         sl = s.length;
@@ -50,8 +50,8 @@ for (i = 0; i < l; i++) {
   x[i].appendChild(b);
   a.addEventListener("click", function(e) {
     /* When the select box is clicked, close any other select boxes,
-    and open/close the current select box: */
-    e.stopPropagation();
+    and open/close the current select box: */   
+    e.stopPropagation(); 
     closeAllSelect(this);
     this.nextSibling.classList.toggle("select-hide");
     this.classList.toggle("select-arrow-active");
@@ -90,6 +90,7 @@ document.addEventListener("click", closeAllSelect);
 /*--tutorial from https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp?
 fbclid=IwAR2CpsrN1zdFV5hoX6G-wHvBOmzKGp7LshUtr2GbrDREGBAIu4PvnyJa6CE*/
 /*-- javascript for the image gallery ---*/
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
