@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>About Jay.Kay Customs</title>
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main-nonresponsive.css">
 	<link rel="stylesheet" href="css/flexbox.css">
 
 	<!--Tutorial from w3schools.com/icons/tryit.asp?icon=fas_fa-shopping-cart&unicon=f07a-->
@@ -50,53 +50,35 @@
 	<div class="product-detail">
 		<div class="details"> 
 			<div class="detail-img">
-				<!--tutorial from: https://codepen.io/anna_blok/pen/eYYRbQY-->
+				<!--tutorial http://qnimate.com/creating-a-slider-using-html-and-css-only/-->
 
-				<div id="slider">
-					<input type="radio" name="slider" id="slide1" checked>
-					<input type="radio" name="slider" id="slide2">
-					<input type="radio" name="slider" id="slide3">
-					<input type="radio" name="slider" id="slide4">
-					<div id="slides">
-						<div id="overflow">
-							<div class="inner">
-								<div class="slide slide_1">
-									<div class="slide-content">
-										<img src="img/spr/supreme1.png" class="slider-image">
-									</div>
-								</div>
-								<div class="slide slide_2">
-									<div class="slide-content">
-										<img src="img/spr/supreme2.png" class="slider-image">
-									</div>
-								</div>
-								<div class="slide slide_3">
-									<div class="slide-content">
-										<img src="img/spr/supreme3.png" class="slider-image">
-									</div>
-								</div>
-								<div class="slide slide_4">
-									<div class="slide-content">
-										<img src="img/spr/supreme4.png" class="slider-image">
-									</div>
-								</div>
-							</div>
-						</div>
+				<div class="slider-holder">
+					<span id="slider-image-1"></span>
+					<span id="slider-image-2"></span>
+					<span id="slider-image-3"></span>
+					<span id="slider-image-4"></span>
+					<span id="slider-image-5"></span>
+					<span id="slider-image-6"></span>
+
+					<div class="image-holder">
+						<img src="img/spr/supreme1.png" class="slider-image">
+						<img src="img/spr/supreme2.png" class="slider-image">
+						<img src="img/spr/supreme3.png" class="slider-image">
+						<img src="img/spr/supreme4.png" class="slider-image">
+						<img src="img/spr/supreme5.png" class="slider-image">
+						<img src="img/spr/supreme6.png" class="slider-image">
 					</div>
-					<div id="controls">
-						<label for="slide1"></label>
-						<label for="slide2"></label>
-						<label for="slide3"></label>
-						<label for="slide4"></label>
+
+					<div class="button-holder">
+						<a href="#slider-image-1" class="slider-change"></a>
+						<a href="#slider-image-2" class="slider-change"></a>
+						<a href="#slider-image-3" class="slider-change"></a>
+						<a href="#slider-image-4" class="slider-change"></a>
+						<a href="#slider-image-5" class="slider-change"></a>
+						<a href="#slider-image-6" class="slider-change"></a>
 					</div>
-					<div id="bullets">
-						<label for="slide1"></label>
-						<label for="slide2"></label>
-						<label for="slide3"></label>
-						<label for="slide4"></label>
-					</div>
+
 				</div>
-
 			</div> <!--end of detail-img---->
 
 			<div class="detail-text">
@@ -231,7 +213,7 @@
 					<a class="footer-link" href="https://github.com/kirbiewoo/p02" target="_blank">Github Repository</a>		
 				</div>		
 			</footer>  
+		
+	</body>
 
-		</body>
-
-		</html>
+	</html>
