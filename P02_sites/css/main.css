@@ -721,7 +721,7 @@ form.size-select{
 }
 
 .brand-button{
-	max-width: 16rem;
+	max-width: 100%;
 	margin: 0 4rem 5rem 4rem;
 	color:#404C77;
 	border: solid #F9D999;
