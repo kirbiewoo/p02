@@ -729,7 +729,7 @@ form.size-select{
 
 .nav-button{
 	font-size: 1em;
-	color: #F1C162;
+	color: #404C77;
 	margin: 0em 1em;
 	border: none;
 	font-weight: bold;
@@ -738,7 +738,7 @@ form.size-select{
 }
 
 .nav-button:hover, .nav-button:focus, .nav-button:active  {
-	color: #526D83;
+	color: #F9D999;
 	border-bottom: 2px solid #FBBE4B;
 	-webkit-transition: color 0.3s ease-out;
 	transition: color 0.3s ease-out;
