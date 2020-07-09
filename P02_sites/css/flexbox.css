@@ -105,7 +105,7 @@ img.brand-logo{
 }
 
 .detail-text{
-  width: 40%;
+  max-width: 50rem;
 }
 
 /*-------Image Gallery-------*/
@@ -245,7 +245,7 @@ div.rating {
     width:100%;
   }
 
-
+  /*image gallery*/
   .detail-img {
     max-width: 100%;
   }
@@ -293,7 +293,7 @@ div.rating {
 
 @media(max-width: 765px){
   .detail-text{
-    width: 100%
+    /*width: 100%;*/
   }
 
   .review-name {
